@@ -6,35 +6,75 @@ router = APIRouter(prefix="/agents", tags=["Agent Registry & Capabilities"])
 AVAILABLE_AGENTS: list[dict] = [
     {
         "id": "supervisor",
-        "name": "Supervisor Router Agent",
-        "role": "Orchestrator",
-        "description": "Analyzes input intent and delegates workflow execution to specialized domain workers.",
-        "capabilities": ["Intent Classification", "Workflow Routing", "Multi-Turn Dialogue"],
+        "name": "Supervisor Orchestrator Agent",
+        "role": "Network Orchestration",
+        "description": "Evaluates task progress, selects single or parallel execution paths, and merges worker outputs.",
+        "capabilities": ["Intent Classification", "Parallel Fan-Out Routing", "Output Merging"],
         "tools": []
     },
     {
-        "id": "hr_agent",
-        "name": "HR Specialist Agent",
-        "role": "Human Resources",
-        "description": "Answers questions regarding employee handbooks, health benefits, remote work, and company policies.",
-        "capabilities": ["Vector RAG Search", "Policy Analysis"],
-        "tools": ["search_hr_documents"]
+        "id": "planner",
+        "name": "Execution Planner Agent",
+        "role": "Planning & Task Decomposition",
+        "description": "Decomposes complex user goals into structured, ordered sub-task lists.",
+        "capabilities": ["Goal Decomposition", "DAG Planning"],
+        "tools": []
     },
     {
-        "id": "finance_agent",
-        "name": "Finance Analytics Agent",
-        "role": "Financial Services",
-        "description": "Executes SQL queries against relational databases to answer budget and expense questions.",
+        "id": "research",
+        "name": "Research Specialist Agent",
+        "role": "Knowledge Retrieval",
+        "description": "Searches vector databases and enterprise documents to gather verified facts.",
+        "capabilities": ["Vector RAG Search", "Knowledge Retrieval"],
+        "tools": ["search_kb_documents"]
+    },
+    {
+        "id": "document",
+        "name": "Document Analysis Agent",
+        "role": "Document Processing",
+        "description": "Parses, summarizes, and extracts key terms from corporate policies and contracts.",
+        "capabilities": ["Policy Parsing", "Contract Clause Extraction"],
+        "tools": ["parse_enterprise_policy"]
+    },
+    {
+        "id": "email",
+        "name": "Corporate Email Agent",
+        "role": "Communication",
+        "description": "Drafts, formats, and prepares professional executive emails.",
+        "capabilities": ["Executive Email Drafting", "Notification Formatting"],
+        "tools": ["draft_corporate_email"]
+    },
+    {
+        "id": "coding",
+        "name": "Software & Automation Agent",
+        "role": "Code Engineering",
+        "description": "Generates, inspects, and validates Python scripts & SQL database utilities.",
+        "capabilities": ["Python Code Execution", "Syntax Validation"],
+        "tools": ["execute_python_code"]
+    },
+    {
+        "id": "analytics",
+        "name": "Data & Financial Analytics Agent",
+        "role": "Analytics & Finance",
+        "description": "Executes SQL queries against relational databases to compute budget and expense metrics.",
         "capabilities": ["Text-to-SQL", "Financial Aggregation"],
-        "tools": ["query_financial_database"]
+        "tools": ["query_financial_sql"]
     },
     {
-        "id": "it_agent",
-        "name": "IT Support Agent",
-        "role": "Information Technology",
-        "description": "Assists with technical troubleshooting, VPN configurations, and corporate password resets.",
-        "capabilities": ["Vector RAG Search", "Technical Guide Retrieval"],
-        "tools": ["search_it_knowledge_base"]
+        "id": "report",
+        "name": "Executive Report Generator",
+        "role": "Report Synthesis",
+        "description": "Synthesizes multi-source research, analytics, and code outputs into structured Markdown reports.",
+        "capabilities": ["Executive Report Compilation", "Markdown Formatting"],
+        "tools": ["generate_markdown_report"]
+    },
+    {
+        "id": "memory",
+        "name": "Context & Memory Agent",
+        "role": "State & Context Management",
+        "description": "Manages persistent organizational memory, user preferences, and session context.",
+        "capabilities": ["Session Context Recall", "Memory Storage"],
+        "tools": ["recall_memory"]
     }
 ]
 
@@ -42,11 +82,11 @@ AVAILABLE_AGENTS: list[dict] = [
     "",
     response_model=AgentListResponse,
     status_code=status.HTTP_200_OK,
-    summary="List Registered Agents & Capabilities"
+    summary="List Registered 9 Agents & Capabilities"
 )
 async def list_agents() -> AgentListResponse:
     """
-    Returns metadata detailing all active worker agents, descriptions, and assigned tool definitions.
+    Returns metadata detailing all 9 active agents, roles, capabilities, and assigned tool definitions.
     """
     agents = [AgentInfoSchema.model_validate(agent) for agent in AVAILABLE_AGENTS]
     return AgentListResponse(agents=agents)
@@ -60,7 +100,7 @@ async def list_agents() -> AgentListResponse:
 )
 async def get_agent(agent_id: str) -> AgentInfoSchema:
     """
-    Returns detail for a single specified agent ID.
+    Returns metadata for a specific agent ID.
     """
     for agent in AVAILABLE_AGENTS:
         if agent["id"] == agent_id:
