@@ -1,149 +1,83 @@
 <div align="center">
 
-# 🤖 Multi-Agent Enterprise AI Assistant
+# 🚀 Multi-Agent Enterprise AI Assistant
 
-### A production-quality Proof of Concept demonstrating Agentic AI orchestration
+### Autonomous Multi-Agent Orchestration Platform for Enterprise Intelligence
 
-[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org)
-[![LangGraph](https://img.shields.io/badge/LangGraph-Orchestration-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://langchain-ai.github.io/langgraph/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Flask](https://img.shields.io/badge/Flask-3.x-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://github.com/langchain-ai/langgraph)
+[![TypeScript](https://img.shields.io/badge/TypeScript_5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Python](https://img.shields.io/badge/Python_3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge)](https://www.trychroma.com/)
+[![Tailwind](https://img.shields.io/badge/Tailwind_v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-<br/>
+**Orchestrate 9 specialized AI agents** in parallel and sequential graph workflows. Powered by FastAPI, LangGraph state machines, ChromaDB Hybrid RAG with BM25 Reciprocal Rank Fusion, and 10 executable Pydantic-typed tools.
 
-**A modern enterprise AI platform featuring a Supervisor-Worker multi-agent architecture, built with LangGraph for intelligent task routing across specialized HR, Finance, and IT Support agents.**
-
-[Features](#-features) · [Architecture](#-architecture) · [Tech Stack](#-tech-stack) · [Getting Started](#-getting-started) · [API Reference](#-api-reference) · [Roadmap](#-roadmap)
+[Explore Dashboard](#-frontend-pages) · [Architecture](#-architecture) · [Quick Start](#-quick-start) · [API Docs](#-api-endpoints)
 
 </div>
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-<table>
-<tr>
-<td width="50%">
-
-### 🧠 Intelligent Agent Orchestration
-- **Supervisor Agent** intelligently routes queries to the right specialist
-- **HR Agent** — RAG-powered search over company policies & benefits
-- **Finance Agent** — Text-to-SQL queries on budget and expense data
-- **IT Support Agent** — Knowledge base search for troubleshooting
-
-</td>
-<td width="50%">
-
-### 🎨 Premium Enterprise UI
-- Modern chat interface with real-time responses
-- Framer Motion animations & micro-interactions
-- Fully responsive design (mobile → desktop)
-- Dark mode-ready with glassmorphism elements
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### ⚡ Hybrid Backend Architecture
-- **FastAPI** handles async routes & auto-generates OpenAPI docs
-- **Flask** mounted via WSGIMiddleware for synchronous agent processing
-- Unified server running on a single port
-- Production-ready CORS configuration
-
-</td>
-<td width="50%">
-
-### 🗃️ Dual Data Layer
-- **SQLite** for structured financial data (budgets, expenses)
-- **ChromaDB** for vector search over HR policies & IT docs
-- Pre-built seed scripts for instant synthetic data generation
-- Zero external database dependencies
-
-</td>
-</tr>
-</table>
+| Feature | Description |
+|:--------|:------------|
+| 🤖 **9 Autonomous Agents** | Supervisor, Planner, Research, Document, Email, Coding, Analytics, Report Generator, Memory |
+| 🔀 **LangGraph State Machine** | Conditional parallel/sequential routing with deterministic execution graphs |
+| 🔍 **Hybrid RAG Pipeline** | BM25 sparse keyword + ChromaDB dense vector search with Reciprocal Rank Fusion (RRF, k=60) |
+| 🛠️ **10 Typed Tools** | Calculator, Document Search, Employee Search, SQL Tool, Python Interpreter, CSV Analysis, and more |
+| 📄 **230 Enterprise Documents** | HR Policies, SOPs, Incident Reports, Architecture Specs, Financial Reports, Meeting Notes |
+| 🗄️ **Synthetic Enterprise DB** | SQLite with 100 employees, 50 projects, departments, and financial records |
+| 🎨 **Apple-Grade UI** | Next.js 16 with glassmorphism, Framer Motion animations, and dark theme |
+| 📊 **Real-Time Analytics** | Agent monitoring, execution timelines, tool call inspection, and ROI tracking |
+| 🔒 **Air-Gapped Ready** | 100% local deployment with HuggingFace embeddings and Ollama LLM support |
 
 ---
 
 ## 🏗️ Architecture
 
-### System Overview
-
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        CLIENT (Browser)                        │
-│                  Next.js 15 · React · Tailwind                 │
-│              shadcn/ui · Framer Motion · Zustand               │
-└──────────────────────────┬──────────────────────────────────────┘
-                           │ REST API (HTTP)
-                           ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                    HYBRID API SERVER                            │
-│            FastAPI (ASGI) + Flask (WSGI Mounted)                │
-│                   Uvicorn · Port 8000                           │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│  ┌───────────────────────────────────────────────────────────┐  │
-│  │              🧠 LangGraph Orchestration                   │  │
-│  │                                                           │  │
-│  │   ┌─────────────┐     Routes to      ┌──────────────┐    │  │
-│  │   │  Supervisor  │ ──────────────────▶│   HR Agent   │    │  │
-│  │   │    Agent     │                    │  (RAG Tools) │    │  │
-│  │   │   (Router)   │                    └──────────────┘    │  │
-│  │   │             │                    ┌──────────────┐    │  │
-│  │   │             │ ──────────────────▶│Finance Agent │    │  │
-│  │   │             │                    │ (SQL Tools)  │    │  │
-│  │   │             │                    └──────────────┘    │  │
-│  │   │             │                    ┌──────────────┐    │  │
-│  │   │             │ ──────────────────▶│  IT Agent    │    │  │
-│  │   │             │                    │  (KB Search) │    │  │
-│  │   └─────────────┘                    └──────────────┘    │  │
-│  └───────────────────────────────────────────────────────────┘  │
-│                                                                 │
-├──────────────────────┬──────────────────────────────────────────┤
-│   📊 SQLite          │           🔍 ChromaDB                    │
-│   Budgets · Expenses │           HR Policies · IT Guides        │
-└──────────────────────┴──────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────┐
+│                        Next.js 16 Frontend                         │
+│  Landing · Dashboard · Chat · Knowledge · Docs · Agents · Analytics │
+├─────────────────────────────────────────────────────────────────────┤
+│                     FastAPI REST API (Port 8000)                    │
+│              /api/v1/chat · /api/v1/agents · /api/v1/rag           │
+├──────────────────┬──────────────────┬───────────────────────────────┤
+│  LangGraph Engine │   RAG Pipeline   │    Tool Execution Layer       │
+│  ┌─────────────┐ │ ┌──────────────┐ │ ┌───────────────────────────┐ │
+│  │ Supervisor   │ │ │ BM25 Keyword │ │ │ document_search           │ │
+│  │ Planner      │ │ │ Vector Dense │ │ │ sql_tool (read-only)      │ │
+│  │ Research     │ │ │ RRF Fusion   │ │ │ python_interpreter        │ │
+│  │ Document     │ │ │ ChromaDB     │ │ │ employee_search           │ │
+│  │ Email        │ │ │ Embeddings   │ │ │ csv_analysis              │ │
+│  │ Coding       │ │ └──────────────┘ │ │ send_email                │ │
+│  │ Analytics    │ │                  │ │ calculator                │ │
+│  │ Report Gen   │ │                  │ │ knowledge_search          │ │
+│  │ Memory       │ │                  │ │ weather_tool              │ │
+│  └─────────────┘ │                  │ └───────────────────────────┘ │
+├──────────────────┴──────────────────┴───────────────────────────────┤
+│              SQLite DB           │           ChromaDB               │
+│   100 employees · 50 projects    │    230 enterprise documents      │
+└──────────────────────────────────┴──────────────────────────────────┘
 ```
 
-### Agent Routing Flow
+### Data Flow
 
-```mermaid
-graph LR
-    A[User Query] --> B{Supervisor Agent}
-    B -->|HR related| C[🧑‍💼 HR Agent]
-    B -->|Finance related| D[💰 Finance Agent]
-    B -->|IT related| E[🔧 IT Agent]
-    C -->|RAG Search| F[(ChromaDB)]
-    D -->|SQL Query| G[(SQLite)]
-    E -->|KB Search| F
-    C --> H[Response]
-    D --> H
-    E --> H
 ```
-
----
-
-## 🛠️ Tech Stack
-
-| Layer | Technology | Purpose |
-|-------|-----------|---------|
-| **Frontend** | Next.js 15, React, TypeScript | App framework & type safety |
-| **Styling** | Tailwind CSS 4, shadcn/ui | Utility-first CSS & component library |
-| **Animations** | Framer Motion | Smooth micro-interactions |
-| **State** | Zustand | Lightweight state management |
-| **Backend (ASGI)** | FastAPI | Async routes & OpenAPI docs |
-| **Backend (WSGI)** | Flask | Synchronous agent processing |
-| **Orchestration** | LangGraph | Multi-agent state machine |
-| **LLM Framework** | LangChain | Tools, prompts & model abstraction |
-| **LLM Provider** | Gemini 1.5 Pro / OpenAI | Language model inference |
-| **Structured DB** | SQLite | Financial data storage |
-| **Vector DB** | ChromaDB | Document embeddings & similarity search |
+User Query → Supervisor Agent → Planner (Task Decomposition)
+                                    ↓
+                    ┌───────────────┼───────────────┐
+                    ↓               ↓               ↓
+              Research Agent   Analytics Agent  Document Agent
+              (Hybrid RAG)    (SQL Queries)    (PDF Parsing)
+                    ↓               ↓               ↓
+                    └───────────────┼───────────────┘
+                                    ↓
+                          Report Generator → Cited Response
+```
 
 ---
 
@@ -151,197 +85,234 @@ graph LR
 
 ```
 Multi-Agent-Enterprise-AI-Assistant/
-│
-├── backend/                          # Python Backend
+├── backend/                          # FastAPI Python Backend
 │   ├── app/
-│   │   ├── agents/
-│   │   │   ├── graph.py              # LangGraph state machine & supervisor
-│   │   │   └── worker_agents.py      # HR, Finance, IT agent definitions
-│   │   ├── api/                      # Additional API route modules
-│   │   ├── core/                     # App configuration & settings
-│   │   ├── db/
-│   │   │   ├── database.py           # SQLite connection & session
-│   │   │   └── vectorstore.py        # ChromaDB client & collections
-│   │   ├── models/                   # SQLAlchemy & Pydantic models
-│   │   ├── tools/
-│   │   │   ├── rag_tools.py          # Vector search tools (HR & IT)
-│   │   │   └── sql_tools.py          # SQL query tool (Finance)
-│   │   ├── utils/                    # Helper functions
-│   │   └── main.py                   # FastAPI + Flask hybrid entry point
-│   ├── data/
-│   │   └── seed_data.py              # Synthetic data generation script
-│   └── requirements.txt
+│   │   ├── main.py                   # FastAPI application entry point
+│   │   ├── settings.py               # Pydantic Settings (env vars)
+│   │   ├── api/
+│   │   │   └── v1/
+│   │   │       ├── chat.py           # POST /api/v1/chat/invoke
+│   │   │       ├── agents.py         # GET  /api/v1/agents
+│   │   │       └── rag.py            # POST /api/v1/rag/search
+│   │   ├── agents/                   # LangGraph Agent Definitions
+│   │   │   ├── supervisor.py         # Graph Router Agent
+│   │   │   ├── planner.py            # Task Decomposition Agent
+│   │   │   ├── research.py           # Hybrid RAG Search Agent
+│   │   │   ├── document.py           # Document Parser Agent
+│   │   │   ├── email_agent.py        # Email Composition Agent
+│   │   │   ├── coding.py             # Python Interpreter Agent
+│   │   │   ├── analytics.py          # SQL Analytics Agent
+│   │   │   ├── report_generator.py   # Executive Report Agent
+│   │   │   └── memory.py             # Conversation Memory Agent
+│   │   ├── services/
+│   │   │   ├── llm_service.py        # LLM Provider Factory
+│   │   │   ├── vector_service.py     # ChromaDB Vector Store
+│   │   │   └── database_service.py   # SQLite Query Engine
+│   │   ├── rag/
+│   │   │   ├── pipeline.py           # Hybrid RAG Pipeline
+│   │   │   ├── loaders.py            # Universal Document Loader
+│   │   │   ├── chunker.py            # Recursive Text Splitter
+│   │   │   └── retriever.py          # BM25 + Vector RRF Retriever
+│   │   ├── tools/                    # 10 Pydantic-Typed Tools
+│   │   ├── prompts/                  # System Prompt Templates
+│   │   ├── models/                   # Pydantic Data Models
+│   │   ├── schemas/                  # API Request/Response Schemas
+│   │   └── utils/                    # Logging, Helpers
+│   └── data/                         # Synthetic Enterprise Data
+│       ├── documents/                # 230 MD/PDF/CSV/JSON files
+│       ├── sql/                      # SQLite schema & seed data
+│       └── generate_enterprise_data.py
 │
-├── frontend/                         # Next.js Frontend
+├── frontend/                         # Next.js 16 TypeScript Frontend
 │   ├── src/
-│   │   ├── app/
-│   │   │   ├── globals.css           # Global styles & Tailwind config
-│   │   │   ├── layout.tsx            # Root layout with Inter font
-│   │   │   └── page.tsx              # Main chat interface
-│   │   ├── components/ui/            # shadcn/ui components
-│   │   ├── hooks/                    # Custom React hooks
-│   │   ├── lib/                      # Utility functions
-│   │   └── store/
-│   │       └── useChatStore.ts       # Zustand chat state management
-│   ├── package.json
-│   └── tailwind.config.ts
+│   │   ├── app/                      # App Router Pages
+│   │   │   ├── page.tsx              # World-Class Landing Page (10 sections)
+│   │   │   ├── layout.tsx            # Root Layout (Inter font, Toast, SEO)
+│   │   │   ├── globals.css           # Design System (Glass, Animations)
+│   │   │   ├── dashboard/page.tsx    # Control Dashboard
+│   │   │   ├── chat/page.tsx         # Enterprise AI Chat
+│   │   │   ├── knowledge/page.tsx    # RAG Knowledge Search
+│   │   │   ├── documents/page.tsx    # Document Library
+│   │   │   ├── agents/page.tsx       # Agent Monitoring Dashboard
+│   │   │   ├── analytics/page.tsx    # Analytics Dashboard
+│   │   │   └── settings/page.tsx     # System Settings
+│   │   ├── components/
+│   │   │   ├── layout/               # Sidebar, Header
+│   │   │   ├── landing/              # HeroGraph, AgentsShowcase, FAQ, etc.
+│   │   │   ├── chat/                 # MarkdownRenderer, TypingAnimation
+│   │   │   └── ui/                   # Skeleton, Toast, EmptyState, ErrorBoundary
+│   │   ├── lib/                      # API Client, Utilities
+│   │   ├── store/                    # Zustand Global State
+│   │   └── hooks/                    # Custom React Hooks
+│   └── package.json
 │
-├── .gitignore
-└── README.md
+├── data/                             # Generated Enterprise Documents
+└── README.md                         # This file
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
 ### Prerequisites
 
-- **Python 3.11+**
-- **Node.js 18+**
-- **Gemini API Key** or **OpenAI API Key**
+- **Python 3.12+** with `uv` package manager
+- **Node.js 18+** with `npm`
+- **Git**
 
-### 1. Clone the Repository
+### 1. Clone & Setup Backend
 
 ```bash
 git clone https://github.com/Sonu-Thomas-001/Multi-Agent-Enterprise-AI-Assistant.git
 cd Multi-Agent-Enterprise-AI-Assistant
-```
 
-### 2. Set Up the Backend
-
-```bash
+# Backend setup
 cd backend
-
-# Create and activate virtual environment
 python -m venv venv
+.\venv\Scripts\Activate.ps1          # Windows
+# source venv/bin/activate           # macOS/Linux
 
-# Windows
-.\venv\Scripts\Activate.ps1
-
-# macOS / Linux
-source venv/bin/activate
-
-# Install dependencies
 pip install -r requirements.txt
-```
 
-### 3. Configure Environment Variables
+# Generate synthetic enterprise data
+python data/generate_enterprise_data.py
 
-Create a `.env` file in the `backend/` directory:
-
-```env
-# Choose one:
-GEMINI_API_KEY=your_gemini_api_key_here
-# OR
-OPENAI_API_KEY=your_openai_api_key_here
-```
-
-### 4. Seed Synthetic Data
-
-```bash
-python data/seed_data.py
-```
-
-This populates SQLite with financial data and ChromaDB with HR policies and IT guides.
-
-### 5. Start the Backend Server
-
-```bash
+# Start FastAPI server
 uvicorn app.main:app --reload --port 8000
 ```
 
-The API will be available at `http://localhost:8000` with auto-generated docs at `http://localhost:8000/docs`.
-
-### 6. Set Up & Start the Frontend
+### 2. Setup Frontend
 
 ```bash
-cd ../frontend
-
-# Install dependencies
+# In a new terminal
+cd frontend
 npm install
-
-# Start the development server
-npm run dev
+npm run dev                          # http://localhost:3000
 ```
 
-Visit **http://localhost:3000** and start chatting! 🎉
+### 3. Environment Variables
+
+Create `backend/.env`:
+```env
+GEMINI_API_KEY=your-api-key-here
+LLM_PROVIDER=gemini               # gemini | openai | ollama
+LLM_MODEL=gemini-2.5-flash
+EMBEDDING_MODEL=all-MiniLM-L6-v2  # Local zero-cost embeddings
+CHROMA_PERSIST_DIR=./chroma_db
+DATABASE_URL=sqlite:///./data/sql/enterprise.db
+LOG_LEVEL=INFO
+CORS_ORIGINS=http://localhost:3000
+```
 
 ---
 
-## 📡 API Reference
+## 🔌 API Endpoints
 
 | Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/api/v1/system/status` | Health check (FastAPI) |
-| `POST` | `/api/v1/chat/invoke` | Send a message to the agent system (Flask) |
-| `GET` | `/docs` | Interactive Swagger documentation (FastAPI) |
+|:-------|:---------|:------------|
+| `GET` | `/health` | System health check |
+| `GET` | `/api/v1/agents` | List all 9 registered agents |
+| `POST` | `/api/v1/chat/invoke` | Invoke multi-agent chat orchestration |
+| `POST` | `/api/v1/rag/search` | Hybrid RAG document search |
 
-### `POST /api/v1/chat/invoke`
+### Chat Invoke Request
 
-**Request Body:**
 ```json
 {
-  "session_id": "unique-session-uuid",
-  "message": "What is our Q3 marketing budget?"
+  "message": "What is our remote work policy?",
+  "session_id": "session-001",
+  "agent_id": "Supervisor Agent"
 }
 ```
 
-**Response:**
+### Chat Invoke Response
+
 ```json
 {
-  "response": "The Q3 marketing budget is $200,000.",
-  "agent_used": "LangGraph Supervisor",
-  "sources": []
+  "session_id": "session-001",
+  "agent_used": "Research Agent",
+  "response": "According to HR Policy #17...",
+  "thought_trace": [
+    "1. Supervisor: Routing to Research Agent (RAG)",
+    "2. Research: BM25 + Vector RRF search executed",
+    "3. Document: Parsed hr_policies/doc_17.md"
+  ],
+  "citations": [
+    {
+      "source_file": "hr_policies/doc_17.md",
+      "title": "HR Policy #17: Remote Work Guidelines",
+      "category": "hr_policies",
+      "domain": "HR",
+      "page_or_section": "Section 2",
+      "score": 0.94,
+      "snippet": "Core working hours are 9:00 AM to 5:00 PM EST."
+    }
+  ]
 }
 ```
 
 ---
 
-## 💬 Example Queries
+## 🎨 Frontend Pages
 
-| Domain | Example Query |
-|--------|--------------|
-| 🧑‍💼 **HR** | *"What is the remote work policy?"* |
-| 🧑‍💼 **HR** | *"Tell me about health benefits for 2024."* |
-| 💰 **Finance** | *"What is the Q3 marketing budget?"* |
-| 💰 **Finance** | *"Show me Engineering department expenses."* |
-| 🔧 **IT** | *"I can't connect to the VPN, help!"* |
-| 🔧 **IT** | *"How do I reset my password?"* |
-
----
-
-## 🗺️ Roadmap
-
-- [x] Supervisor-Worker agent architecture with LangGraph
-- [x] RAG tools for HR & IT knowledge base (ChromaDB)
-- [x] Text-to-SQL tools for financial queries (SQLite)
-- [x] Modern Next.js 15 chat UI with animations
-- [x] Hybrid FastAPI + Flask backend
-- [x] Synthetic enterprise data seeding
-- [ ] Streaming responses (Server-Sent Events)
-- [ ] Authentication & session persistence
-- [ ] Agent memory & conversation context
-- [ ] Docker Compose deployment
-- [ ] Additional agents (Legal, Project Management)
-- [ ] Dashboard with analytics & agent activity metrics
+| Page | Route | Features |
+|:-----|:------|:---------|
+| **Landing** | `/` | 10-section hero with interactive agent graph, features, AI agents showcase, architecture diagram, FAQ |
+| **Dashboard** | `/dashboard` | KPI cards, agent workload bars, recent document ingestion feed |
+| **Chat** | `/chat` | Markdown rendering, code highlighting, file upload, agent status, citations, copy/regenerate |
+| **Knowledge** | `/knowledge` | Hybrid BM25 + Vector search with domain category filters |
+| **Documents** | `/documents` | 230 enterprise documents with format badges and viewer |
+| **Agents** | `/agents` | Workflow graph, execution timeline, tool calls, reasoning steps, animated charts |
+| **Analytics** | `/analytics` | Request volume, latency distribution, agent/tool usage, top prompts, sparklines |
+| **Settings** | `/settings` | LLM provider switcher, API keys, ChromaDB Top-K slider |
 
 ---
 
-## 🤝 Contributing
+## 🤖 Agent Specifications
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+| Agent | Role | Tools | Description |
+|:------|:-----|:------|:------------|
+| **Supervisor** | Graph Router | `graph_router` | Routes requests to subagents in parallel or sequential mode |
+| **Planner** | Task Decomposer | `task_breakdown` | Decomposes complex queries into ordered sub-tasks |
+| **Research** | Hybrid RAG | `document_search`, `knowledge_search` | BM25 + Vector RRF across 230 enterprise documents |
+| **Document** | Metadata Parser | `parse_policy` | Parses PDF, MD, CSV, JSON with section awareness |
+| **Email** | Communications | `send_email` | Composes and dispatches enterprise emails |
+| **Coding** | Python Executor | `python_interpreter`, `calculator` | Sandboxed code execution with stdout capture |
+| **Analytics** | SQL Telemetry | `sql_tool`, `employee_search`, `csv_analysis` | Read-only SQL queries on enterprise.db |
+| **Report Gen** | PDF Synthesizer | `generate_report` | Executive summaries with citations |
+| **Memory** | Context Buffer | `conversation_memory` | Sliding-window session state management |
 
 ---
 
-## 📄 License
+## 🛠️ Technology Stack
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+| Layer | Technology | Purpose |
+|:------|:-----------|:--------|
+| **Frontend** | Next.js 16, TypeScript 5, Tailwind CSS v4 | App Router, Turbopack, glassmorphism design |
+| **Animations** | Framer Motion | Scroll effects, page transitions, accordion |
+| **State** | Zustand | Global client state management |
+| **Backend** | FastAPI, Python 3.12, Pydantic v2 | Async API with typed validation |
+| **Agents** | LangGraph, LangChain | Stateful multi-agent graph workflows |
+| **Vector DB** | ChromaDB | Persistent vector embeddings store |
+| **Embeddings** | Sentence-Transformers (all-MiniLM-L6-v2) | Local zero-cost embedding generation |
+| **Database** | SQLite | Relational enterprise data storage |
+| **LLM** | Google Gemini 2.5 Flash | Default language model provider |
+
+---
+
+## 📊 Enterprise Data
+
+The platform ships with realistic synthetic data for **Acme Digital Solutions**:
+
+- **100 Employees** across 8 departments (Engineering, Product, HR, Finance, Legal, IT, QA, Management)
+- **50 Active Projects** with budgets, timelines, and team allocations
+- **230 Documents**: HR Policies, Engineering SOPs, Incident Reports, Architecture Specs, Financial Reports, Meeting Notes, Email Conversations, Support Tickets, Change Requests, Knowledge Base Articles, Product Roadmaps
+
+---
+
+## 📝 License
+
+This project is for educational and demonstration purposes.
 
 ---
 
@@ -349,6 +320,6 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 **Built with ❤️ by [Sonu Thomas](https://github.com/Sonu-Thomas-001)**
 
-⭐ Star this repo if you found it helpful!
+FastAPI · LangGraph · Next.js 16 · ChromaDB · Pydantic v2
 
 </div>

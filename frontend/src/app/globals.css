@@ -1,3 +1,13 @@
+/**
+ * Acme Digital Solutions — Global Design System
+ *
+ * Color Palette:  Dark Slate (#0B0F17) + Indigo (#6366F1) + Purple (#A855F7)
+ * Typography:     Inter (Google Fonts) with SF Pro fallback
+ * Glass Effects:  backdrop-blur-xl with rgba borders
+ * Animations:     Shimmer skeletons, smooth transitions, pulse indicators
+ * Scrollbars:     Custom thin scrollbars matching dark theme
+ * Accessibility:  Focus rings, reduced motion support, skip links
+ */
 @import "tailwindcss";
 
 @layer base {
@@ -16,12 +26,21 @@
   body {
     background-color: #0b0f17;
     color: #f8fafc;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", sans-serif;
+    font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif;
     overflow-x: hidden;
+  }
+
+  /* Accessibility: Focus Ring Styles */
+  *:focus-visible {
+    outline: 2px solid rgba(99, 102, 241, 0.7);
+    outline-offset: 2px;
+    border-radius: 8px;
   }
 }
 
-/* Glassmorphism Design Utilities */
+/* ════════════════════════════════════════════════
+   GLASSMORPHISM DESIGN SYSTEM
+   ════════════════════════════════════════════════ */
 .glass-card {
   background: rgba(15, 23, 42, 0.65);
   backdrop-filter: blur(16px);
@@ -55,6 +74,9 @@
   border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* ════════════════════════════════════════════════
+   GRADIENT & TEXT EFFECTS
+   ════════════════════════════════════════════════ */
 .gradient-text {
   background: linear-gradient(135deg, #a5b4fc 0%, #6366f1 50%, #c084fc 100%);
   -webkit-background-clip: text;
@@ -80,7 +102,53 @@
   opacity: 1;
 }
 
-/* Custom Scrollbars */
+/* ════════════════════════════════════════════════
+   SKELETON SHIMMER ANIMATION
+   ════════════════════════════════════════════════ */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(30, 41, 59, 0.4) 25%,
+    rgba(51, 65, 85, 0.5) 50%,
+    rgba(30, 41, 59, 0.4) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* ════════════════════════════════════════════════
+   PROSE STYLES FOR MARKDOWN RENDERING
+   ════════════════════════════════════════════════ */
+.prose-enterprise h1,
+.prose-enterprise h2,
+.prose-enterprise h3 {
+  scroll-margin-top: 80px;
+}
+
+.prose-enterprise pre {
+  margin: 0;
+}
+
+/* ════════════════════════════════════════════════
+   SMOOTH PAGE TRANSITIONS
+   ════════════════════════════════════════════════ */
+main {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ════════════════════════════════════════════════
+   CUSTOM SCROLLBARS
+   ════════════════════════════════════════════════ */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -97,4 +165,19 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(99, 102, 241, 0.5);
+}
+
+/* ════════════════════════════════════════════════
+   ACCESSIBILITY: REDUCED MOTION
+   ════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  main {
+    animation: none;
+  }
 }
