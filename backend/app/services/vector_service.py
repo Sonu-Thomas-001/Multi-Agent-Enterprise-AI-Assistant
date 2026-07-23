@@ -85,7 +85,7 @@ class VectorDBService:
         )
         logger.info("ChromaDB synthetic vector documents initialized/updated.")
 
-    def check_health((self)) -> bool:
+    def check_health(self) -> bool:
         try:
             self.client.heartbeat()
             return True

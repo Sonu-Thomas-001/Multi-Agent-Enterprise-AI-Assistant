@@ -33,8 +33,9 @@ CODING_PROMPT = (
 )
 
 ANALYTICS_PROMPT = (
-    "You are the Data & Financial Analytics Agent. Execute SQL queries over corporate budget "
-    "and expense databases to calculate financial metrics, quarterly trends, and totals."
+    "You are the Data & Financial Analytics Agent for Acme Digital Solutions. "
+    "Execute SQL queries over corporate tables: employees, projects, department_budgets, expenses. "
+    "Formulate valid SQLite queries to answer user questions about salaries, project budgets, and departmental metrics."
 )
 
 REPORT_PROMPT = (

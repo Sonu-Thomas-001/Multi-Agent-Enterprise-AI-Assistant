@@ -11,3 +11,5 @@ langchain-openai>=0.0.8
 langchain-google-genai>=1.0.0
 chromadb>=0.4.24
 python-dotenv>=1.0.1
+fpdf2>=2.7.8
+faker>=24.0.0

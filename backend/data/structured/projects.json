@@ -1,0 +1,502 @@
+[
+  {
+    "project_id": "PRJ-2001",
+    "project_name": "Project Velocity Cloud Migration",
+    "lead_email": "taylor.anderson92@acmedigital.com",
+    "budget": 349607,
+    "status": "In Progress",
+    "tech_stack": "Node.js, Next.js, MongoDB",
+    "start_date": "2025-12-04",
+    "end_date": "2026-11-11"
+  },
+  {
+    "project_id": "PRJ-2002",
+    "project_name": "Project Quantum Cloud Migration",
+    "lead_email": "rowan.moore18@acmedigital.com",
+    "budget": 208157,
+    "status": "In Progress",
+    "tech_stack": "Go, Kubernetes, Microservices",
+    "start_date": "2026-03-07",
+    "end_date": "2026-10-15"
+  },
+  {
+    "project_id": "PRJ-2003",
+    "project_name": "Project Apollo Security Audit",
+    "lead_email": "jordan.martin53@acmedigital.com",
+    "budget": 396954,
+    "status": "On Hold",
+    "tech_stack": "Go, Kubernetes, Microservices",
+    "start_date": "2025-10-24",
+    "end_date": "2026-09-06"
+  },
+  {
+    "project_id": "PRJ-2004",
+    "project_name": "Project Nexus Analytics Pipeline",
+    "lead_email": "hayden.taylor54@acmedigital.com",
+    "budget": 458396,
+    "status": "On Hold",
+    "tech_stack": "Python, FastAPI, LangGraph, React",
+    "start_date": "2025-08-03",
+    "end_date": "2026-11-27"
+  },
+  {
+    "project_id": "PRJ-2005",
+    "project_name": "Project Velocity Cloud Migration",
+    "lead_email": "skyler.miller46@acmedigital.com",
+    "budget": 363118,
+    "status": "Completed",
+    "tech_stack": "Go, Kubernetes, Microservices",
+    "start_date": "2025-08-22",
+    "end_date": "2027-01-08"
+  },
+  {
+    "project_id": "PRJ-2006",
+    "project_name": "Project Cyber AI Assistant",
+    "lead_email": "dakota.miller63@acmedigital.com",
+    "budget": 280080,
+    "status": "Testing",
+    "tech_stack": "Go, Kubernetes, Microservices",
+    "start_date": "2025-09-18",
+    "end_date": "2026-08-29"
+  },
+  {
+    "project_id": "PRJ-2007",
+    "project_name": "Project Horizon CRM Integration",
+    "lead_email": "alex.martinez86@acmedigital.com",
+    "budget": 473956,
+    "status": "In Progress",
+    "tech_stack": "Go, Kubernetes, Microservices",
+    "start_date": "2026-03-20",
+    "end_date": "2027-01-28"
+  },
+  {
+    "project_id": "PRJ-2008",
+    "project_name": "Project Quantum Cloud Migration",
+    "lead_email": "taylor.garcia51@acmedigital.com",
+    "budget": 670644,
+    "status": "On Hold",
+    "tech_stack": "Python, FastAPI, LangGraph, React",
+    "start_date": "2026-04-12",
+    "end_date": "2027-02-02"
+  },
+  {
+    "project_id": "PRJ-2009",
+    "project_name": "Project Horizon AI Assistant",
+    "lead_email": "rowan.martinez60@acmedigital.com",
+    "budget": 240556,
+    "status": "Planning",
+    "tech_stack": "Node.js, Next.js, MongoDB",
+    "start_date": "2025-11-11",
+    "end_date": "2026-11-13"
+  },
+  {
+    "project_id": "PRJ-2010",
+    "project_name": "Project Nexus Security Audit",
+    "lead_email": "morgan.davis42@acmedigital.com",
+    "budget": 403894,
+    "status": "Completed",
+    "tech_stack": "Node.js, Next.js, MongoDB",
+    "start_date": "2025-10-21",
+    "end_date": "2026-10-25"
+  },
+  {
+    "project_id": "PRJ-2011",
+    "project_name": "Project Apollo Security Audit",
+    "lead_email": "taylor.miller3@acmedigital.com",
+    "budget": 615621,
+    "status": "Planning",
+    "tech_stack": "Node.js, Next.js, MongoDB",
+    "start_date": "2026-01-30",
+    "end_date": "2027-02-04"
+  },
+  {
+    "project_id": "PRJ-2012",
+    "project_name": "Project Apollo Analytics Pipeline",
+    "lead_email": "jamie.moore84@acmedigital.com",
+    "budget": 92213,
+    "status": "Planning",
+    "tech_stack": "Java, Spring Boot, PostgreSQL",
+    "start_date": "2026-02-11",
+    "end_date": "2026-08-27"
+  },
+  {
+    "project_id": "PRJ-2013",
+    "project_name": "Project Cyber AI Assistant",
+    "lead_email": "rowan.garcia31@acmedigital.com",
+    "budget": 182352,
+    "status": "Completed",
+    "tech_stack": "Python, FastAPI, LangGraph, React",
+    "start_date": "2025-08-09",
+    "end_date": "2026-10-16"
+  },
+  {
+    "project_id": "PRJ-2014",
+    "project_name": "Project Velocity Mobile App",
+    "lead_email": "reese.anderson33@acmedigital.com",
+    "budget": 436814,
+    "status": "In Progress",
+    "tech_stack": "Python, PyTorch, ChromaDB",
+    "start_date": "2026-03-27",
+    "end_date": "2026-10-02"
+  },
+  {
+    "project_id": "PRJ-2015",
+    "project_name": "Project Vanguard Cloud Migration",
+    "lead_email": "pat.gonzalez75@acmedigital.com",
+    "budget": 76925,
+    "status": "Testing",
+    "tech_stack": "Python, PyTorch, ChromaDB",
+    "start_date": "2025-11-13",
+    "end_date": "2026-12-01"
+  },
+  {
+    "project_id": "PRJ-2016",
+    "project_name": "Project Nexus Cloud Migration",
+    "lead_email": "casey.lopez76@acmedigital.com",
+    "budget": 707711,
+    "status": "In Progress",
+    "tech_stack": "Python, FastAPI, LangGraph, React",
+    "start_date": "2025-12-21",
+    "end_date": "2027-01-22"
+  },
+  {
+    "project_id": "PRJ-2017",
+    "project_name": "Project Apollo Analytics Pipeline",
+    "lead_email": "morgan.gonzalez73@acmedigital.com",
+    "budget": 93064,
+    "status": "Testing",
+    "tech_stack": "Python, PyTorch, ChromaDB",
+    "start_date": "2025-10-17",
+    "end_date": "2027-02-07"
+  },
+  {
+    "project_id": "PRJ-2018",
+    "project_name": "Project Genesis Cloud Migration",
+    "lead_email": "dakota.jones65@acmedigital.com",
+    "budget": 728998,
+    "status": "Testing",
+    "tech_stack": "Python, FastAPI, LangGraph, React",
+    "start_date": "2025-10-21",
+    "end_date": "2026-12-25"
+  },
+  {
+    "project_id": "PRJ-2019",
+    "project_name": "Project Apollo Security Audit",
+    "lead_email": "alex.gonzalez47@acmedigital.com",
+    "budget": 716459,
+    "status": "Completed",
+    "tech_stack": "Java, Spring Boot, PostgreSQL",
+    "start_date": "2025-10-14",
+    "end_date": "2026-10-06"
+  },
+  {
+    "project_id": "PRJ-2020",
+    "project_name": "Project Quantum Mobile App",
+    "lead_email": "hayden.davis35@acmedigital.com",
+    "budget": 695830,
+    "status": "On Hold",
+    "tech_stack": "Go, Kubernetes, Microservices",
+    "start_date": "2025-09-28",
+    "end_date": "2026-12-11"
+  },
+  {
+    "project_id": "PRJ-2021",
+    "project_name": "Project Cyber CRM Integration",
+    "lead_email": "morgan.davis42@acmedigital.com",
+    "budget": 307420,
+    "status": "Planning",
+    "tech_stack": "Node.js, Next.js, MongoDB",
+    "start_date": "2025-10-06",
+    "end_date": "2026-10-23"
+  },
+  {
+    "project_id": "PRJ-2022",
+    "project_name": "Project Velocity ERP Upgrade",
+    "lead_email": "avery.martin79@acmedigital.com",
+    "budget": 447399,
+    "status": "Testing",
+    "tech_stack": "Python, FastAPI, LangGraph, React",
+    "start_date": "2025-09-13",
+    "end_date": "2026-11-13"
+  },
+  {
+    "project_id": "PRJ-2023",
+    "project_name": "Project Phoenix Security Audit",
+    "lead_email": "alex.brown28@acmedigital.com",
+    "budget": 422060,
+    "status": "Testing",
+    "tech_stack": "Node.js, Next.js, MongoDB",
+    "start_date": "2026-01-01",
+    "end_date": "2027-01-21"
+  },
+  {
+    "project_id": "PRJ-2024",
+    "project_name": "Project Vanguard ERP Upgrade",
+    "lead_email": "morgan.moore2@acmedigital.com",
+    "budget": 591722,
+    "status": "In Progress",
+    "tech_stack": "Python, FastAPI, LangGraph, React",
+    "start_date": "2026-01-21",
+    "end_date": "2026-12-04"
+  },
+  {
+    "project_id": "PRJ-2025",
+    "project_name": "Project Velocity ERP Upgrade",
+    "lead_email": "cameron.wilson98@acmedigital.com",
+    "budget": 301997,
+    "status": "Completed",
+    "tech_stack": "Go, Kubernetes, Microservices",
+    "start_date": "2025-10-07",
+    "end_date": "2026-08-26"
+  },
+  {
+    "project_id": "PRJ-2026",
+    "project_name": "Project Apollo CRM Integration",
+    "lead_email": "riley.jackson29@acmedigital.com",
+    "budget": 474045,
+    "status": "In Progress",
+    "tech_stack": "Node.js, Next.js, MongoDB",
+    "start_date": "2025-07-31",
+    "end_date": "2026-11-24"
+  },
+  {
+    "project_id": "PRJ-2027",
+    "project_name": "Project Velocity ERP Upgrade",
+    "lead_email": "sam.wilson68@acmedigital.com",
+    "budget": 410455,
+    "status": "Completed",
+    "tech_stack": "Python, PyTorch, ChromaDB",
+    "start_date": "2025-12-06",
+    "end_date": "2026-11-20"
+  },
+  {
+    "project_id": "PRJ-2028",
+    "project_name": "Project Velocity CRM Integration",
+    "lead_email": "avery.lopez40@acmedigital.com",
+    "budget": 313615,
+    "status": "In Progress",
+    "tech_stack": "Python, FastAPI, LangGraph, React",
+    "start_date": "2026-02-15",
+    "end_date": "2026-11-10"
+  },
+  {
+    "project_id": "PRJ-2029",
+    "project_name": "Project Apollo Mobile App",
+    "lead_email": "jordan.lopez69@acmedigital.com",
+    "budget": 244143,
+    "status": "In Progress",
+    "tech_stack": "Java, Spring Boot, PostgreSQL",
+    "start_date": "2025-09-19",
+    "end_date": "2026-10-31"
+  },
+  {
+    "project_id": "PRJ-2030",
+    "project_name": "Project Cyber Analytics Pipeline",
+    "lead_email": "sam.wilson68@acmedigital.com",
+    "budget": 675780,
+    "status": "Testing",
+    "tech_stack": "Python, FastAPI, LangGraph, React",
+    "start_date": "2026-02-14",
+    "end_date": "2026-11-05"
+  },
+  {
+    "project_id": "PRJ-2031",
+    "project_name": "Project Nexus CRM Integration",
+    "lead_email": "morgan.moore23@acmedigital.com",
+    "budget": 366950,
+    "status": "Planning",
+    "tech_stack": "Python, PyTorch, ChromaDB",
+    "start_date": "2026-03-21",
+    "end_date": "2026-10-31"
+  },
+  {
+    "project_id": "PRJ-2032",
+    "project_name": "Project Titan Cloud Migration",
+    "lead_email": "chris.garcia71@acmedigital.com",
+    "budget": 356327,
+    "status": "In Progress",
+    "tech_stack": "Go, Kubernetes, Microservices",
+    "start_date": "2026-04-02",
+    "end_date": "2026-08-25"
+  },
+  {
+    "project_id": "PRJ-2033",
+    "project_name": "Project Cyber CRM Integration",
+    "lead_email": "morgan.jones61@acmedigital.com",
+    "budget": 551968,
+    "status": "Completed",
+    "tech_stack": "Node.js, Next.js, MongoDB",
+    "start_date": "2026-02-19",
+    "end_date": "2026-09-04"
+  },
+  {
+    "project_id": "PRJ-2034",
+    "project_name": "Project Vanguard Analytics Pipeline",
+    "lead_email": "rowan.jones62@acmedigital.com",
+    "budget": 169629,
+    "status": "Planning",
+    "tech_stack": "Go, Kubernetes, Microservices",
+    "start_date": "2025-09-15",
+    "end_date": "2026-09-09"
+  },
+  {
+    "project_id": "PRJ-2035",
+    "project_name": "Project Cyber Mobile App",
+    "lead_email": "pat.taylor88@acmedigital.com",
+    "budget": 106213,
+    "status": "In Progress",
+    "tech_stack": "Java, Spring Boot, PostgreSQL",
+    "start_date": "2025-08-09",
+    "end_date": "2026-11-07"
+  },
+  {
+    "project_id": "PRJ-2036",
+    "project_name": "Project Apollo AI Assistant",
+    "lead_email": "taylor.miller16@acmedigital.com",
+    "budget": 635181,
+    "status": "Completed",
+    "tech_stack": "Python, PyTorch, ChromaDB",
+    "start_date": "2025-07-23",
+    "end_date": "2027-01-27"
+  },
+  {
+    "project_id": "PRJ-2037",
+    "project_name": "Project Nexus Analytics Pipeline",
+    "lead_email": "sam.moore67@acmedigital.com",
+    "budget": 448855,
+    "status": "Completed",
+    "tech_stack": "Go, Kubernetes, Microservices",
+    "start_date": "2025-12-23",
+    "end_date": "2027-01-19"
+  },
+  {
+    "project_id": "PRJ-2038",
+    "project_name": "Project Horizon CRM Integration",
+    "lead_email": "morgan.gonzalez73@acmedigital.com",
+    "budget": 701194,
+    "status": "Planning",
+    "tech_stack": "Python, PyTorch, ChromaDB",
+    "start_date": "2026-04-04",
+    "end_date": "2026-10-14"
+  },
+  {
+    "project_id": "PRJ-2039",
+    "project_name": "Project Nexus CRM Integration",
+    "lead_email": "quinn.garcia85@acmedigital.com",
+    "budget": 135131,
+    "status": "In Progress",
+    "tech_stack": "Java, Spring Boot, PostgreSQL",
+    "start_date": "2026-02-25",
+    "end_date": "2027-01-10"
+  },
+  {
+    "project_id": "PRJ-2040",
+    "project_name": "Project Apollo AI Assistant",
+    "lead_email": "morgan.smith1@acmedigital.com",
+    "budget": 478361,
+    "status": "Completed",
+    "tech_stack": "Python, PyTorch, ChromaDB",
+    "start_date": "2025-09-26",
+    "end_date": "2026-11-04"
+  },
+  {
+    "project_id": "PRJ-2041",
+    "project_name": "Project Titan AI Assistant",
+    "lead_email": "taylor.taylor37@acmedigital.com",
+    "budget": 346451,
+    "status": "Completed",
+    "tech_stack": "Python, FastAPI, LangGraph, React",
+    "start_date": "2026-01-25",
+    "end_date": "2026-10-28"
+  },
+  {
+    "project_id": "PRJ-2042",
+    "project_name": "Project Cyber Mobile App",
+    "lead_email": "jamie.taylor26@acmedigital.com",
+    "budget": 495790,
+    "status": "Planning",
+    "tech_stack": "Python, PyTorch, ChromaDB",
+    "start_date": "2026-01-29",
+    "end_date": "2027-02-03"
+  },
+  {
+    "project_id": "PRJ-2043",
+    "project_name": "Project Phoenix CRM Integration",
+    "lead_email": "quinn.lopez19@acmedigital.com",
+    "budget": 124878,
+    "status": "Planning",
+    "tech_stack": "Java, Spring Boot, PostgreSQL",
+    "start_date": "2025-12-18",
+    "end_date": "2027-01-21"
+  },
+  {
+    "project_id": "PRJ-2044",
+    "project_name": "Project Cyber CRM Integration",
+    "lead_email": "emerson.jackson57@acmedigital.com",
+    "budget": 180394,
+    "status": "Completed",
+    "tech_stack": "Node.js, Next.js, MongoDB",
+    "start_date": "2025-10-30",
+    "end_date": "2026-10-30"
+  },
+  {
+    "project_id": "PRJ-2045",
+    "project_name": "Project Quantum ERP Upgrade",
+    "lead_email": "jordan.williams64@acmedigital.com",
+    "budget": 509023,
+    "status": "Planning",
+    "tech_stack": "Python, PyTorch, ChromaDB",
+    "start_date": "2026-05-04",
+    "end_date": "2026-12-10"
+  },
+  {
+    "project_id": "PRJ-2046",
+    "project_name": "Project Genesis ERP Upgrade",
+    "lead_email": "reese.anderson33@acmedigital.com",
+    "budget": 77121,
+    "status": "Planning",
+    "tech_stack": "Java, Spring Boot, PostgreSQL",
+    "start_date": "2025-08-03",
+    "end_date": "2027-01-19"
+  },
+  {
+    "project_id": "PRJ-2047",
+    "project_name": "Project Titan Analytics Pipeline",
+    "lead_email": "hayden.martin87@acmedigital.com",
+    "budget": 332602,
+    "status": "On Hold",
+    "tech_stack": "Python, FastAPI, LangGraph, React",
+    "start_date": "2026-02-24",
+    "end_date": "2026-12-20"
+  },
+  {
+    "project_id": "PRJ-2048",
+    "project_name": "Project Quantum Mobile App",
+    "lead_email": "emerson.jackson57@acmedigital.com",
+    "budget": 341668,
+    "status": "In Progress",
+    "tech_stack": "Python, PyTorch, ChromaDB",
+    "start_date": "2025-10-13",
+    "end_date": "2027-01-31"
+  },
+  {
+    "project_id": "PRJ-2049",
+    "project_name": "Project Velocity Cloud Migration",
+    "lead_email": "morgan.jones61@acmedigital.com",
+    "budget": 414863,
+    "status": "Completed",
+    "tech_stack": "Node.js, Next.js, MongoDB",
+    "start_date": "2025-12-11",
+    "end_date": "2026-09-17"
+  },
+  {
+    "project_id": "PRJ-2050",
+    "project_name": "Project Phoenix CRM Integration",
+    "lead_email": "jordan.martin53@acmedigital.com",
+    "budget": 569536,
+    "status": "Testing",
+    "tech_stack": "Go, Kubernetes, Microservices",
+    "start_date": "2025-08-16",
+    "end_date": "2026-08-31"
+  }
+]

@@ -1,0 +1,1002 @@
+[
+  {
+    "employee_id": "EMP-1001",
+    "first_name": "Morgan",
+    "last_name": "Smith",
+    "email": "morgan.smith1@acmedigital.com",
+    "department": "Marketing",
+    "role": "Content Specialist",
+    "salary": 94256,
+    "hire_date": "2025-09-11"
+  },
+  {
+    "employee_id": "EMP-1002",
+    "first_name": "Morgan",
+    "last_name": "Moore",
+    "email": "morgan.moore2@acmedigital.com",
+    "department": "HR",
+    "role": "HR Coordinator",
+    "salary": 69165,
+    "hire_date": "2026-04-23"
+  },
+  {
+    "employee_id": "EMP-1003",
+    "first_name": "Taylor",
+    "last_name": "Miller",
+    "email": "taylor.miller3@acmedigital.com",
+    "department": "Sales",
+    "role": "Account Executive",
+    "salary": 138563,
+    "hire_date": "2025-05-12"
+  },
+  {
+    "employee_id": "EMP-1004",
+    "first_name": "Rowan",
+    "last_name": "Wilson",
+    "email": "rowan.wilson4@acmedigital.com",
+    "department": "Sales",
+    "role": "VP Sales",
+    "salary": 142236,
+    "hire_date": "2024-12-01"
+  },
+  {
+    "employee_id": "EMP-1005",
+    "first_name": "Alex",
+    "last_name": "Garcia",
+    "email": "alex.garcia5@acmedigital.com",
+    "department": "Legal",
+    "role": "Compliance Officer",
+    "salary": 101421,
+    "hire_date": "2025-08-09"
+  },
+  {
+    "employee_id": "EMP-1006",
+    "first_name": "Pat",
+    "last_name": "Hernandez",
+    "email": "pat.hernandez6@acmedigital.com",
+    "department": "HR",
+    "role": "HR Manager",
+    "salary": 114797,
+    "hire_date": "2025-12-07"
+  },
+  {
+    "employee_id": "EMP-1007",
+    "first_name": "Reese",
+    "last_name": "Lopez",
+    "email": "reese.lopez7@acmedigital.com",
+    "department": "Marketing",
+    "role": "Marketing Manager",
+    "salary": 160647,
+    "hire_date": "2023-11-26"
+  },
+  {
+    "employee_id": "EMP-1008",
+    "first_name": "Rowan",
+    "last_name": "Brown",
+    "email": "rowan.brown8@acmedigital.com",
+    "department": "Legal",
+    "role": "Corporate Counsel",
+    "salary": 137357,
+    "hire_date": "2024-10-31"
+  },
+  {
+    "employee_id": "EMP-1009",
+    "first_name": "Emerson",
+    "last_name": "Lopez",
+    "email": "emerson.lopez9@acmedigital.com",
+    "department": "Sales",
+    "role": "Account Executive",
+    "salary": 71006,
+    "hire_date": "2022-10-08"
+  },
+  {
+    "employee_id": "EMP-1010",
+    "first_name": "Riley",
+    "last_name": "Martinez",
+    "email": "riley.martinez10@acmedigital.com",
+    "department": "HR",
+    "role": "Recruiter",
+    "salary": 178571,
+    "hire_date": "2025-11-29"
+  },
+  {
+    "employee_id": "EMP-1011",
+    "first_name": "Quinn",
+    "last_name": "Rodriguez",
+    "email": "quinn.rodriguez11@acmedigital.com",
+    "department": "Product",
+    "role": "Scrum Master",
+    "salary": 174328,
+    "hire_date": "2024-06-06"
+  },
+  {
+    "employee_id": "EMP-1012",
+    "first_name": "Chris",
+    "last_name": "Lopez",
+    "email": "chris.lopez12@acmedigital.com",
+    "department": "IT Support",
+    "role": "IT Helpdesk Specialist",
+    "salary": 152841,
+    "hire_date": "2024-12-24"
+  },
+  {
+    "employee_id": "EMP-1013",
+    "first_name": "Taylor",
+    "last_name": "Martin",
+    "email": "taylor.martin13@acmedigital.com",
+    "department": "Finance",
+    "role": "Controller",
+    "salary": 86417,
+    "hire_date": "2023-11-20"
+  },
+  {
+    "employee_id": "EMP-1014",
+    "first_name": "Quinn",
+    "last_name": "Rodriguez",
+    "email": "quinn.rodriguez14@acmedigital.com",
+    "department": "Sales",
+    "role": "BDR",
+    "salary": 175474,
+    "hire_date": "2022-03-03"
+  },
+  {
+    "employee_id": "EMP-1015",
+    "first_name": "Jordan",
+    "last_name": "Davis",
+    "email": "jordan.davis15@acmedigital.com",
+    "department": "Engineering",
+    "role": "Frontend Developer",
+    "salary": 117581,
+    "hire_date": "2024-12-22"
+  },
+  {
+    "employee_id": "EMP-1016",
+    "first_name": "Taylor",
+    "last_name": "Miller",
+    "email": "taylor.miller16@acmedigital.com",
+    "department": "IT Support",
+    "role": "IT Helpdesk Specialist",
+    "salary": 150909,
+    "hire_date": "2023-09-05"
+  },
+  {
+    "employee_id": "EMP-1017",
+    "first_name": "Quinn",
+    "last_name": "Anderson",
+    "email": "quinn.anderson17@acmedigital.com",
+    "department": "Finance",
+    "role": "Payroll Specialist",
+    "salary": 83301,
+    "hire_date": "2025-02-03"
+  },
+  {
+    "employee_id": "EMP-1018",
+    "first_name": "Rowan",
+    "last_name": "Moore",
+    "email": "rowan.moore18@acmedigital.com",
+    "department": "Marketing",
+    "role": "CMO",
+    "salary": 182679,
+    "hire_date": "2023-03-16"
+  },
+  {
+    "employee_id": "EMP-1019",
+    "first_name": "Quinn",
+    "last_name": "Lopez",
+    "email": "quinn.lopez19@acmedigital.com",
+    "department": "Sales",
+    "role": "Sales Manager",
+    "salary": 131784,
+    "hire_date": "2023-09-17"
+  },
+  {
+    "employee_id": "EMP-1020",
+    "first_name": "Taylor",
+    "last_name": "Johnson",
+    "email": "taylor.johnson20@acmedigital.com",
+    "department": "HR",
+    "role": "Recruiter",
+    "salary": 147240,
+    "hire_date": "2025-07-31"
+  },
+  {
+    "employee_id": "EMP-1021",
+    "first_name": "Avery",
+    "last_name": "Martin",
+    "email": "avery.martin21@acmedigital.com",
+    "department": "HR",
+    "role": "HR Coordinator",
+    "salary": 115019,
+    "hire_date": "2023-02-19"
+  },
+  {
+    "employee_id": "EMP-1022",
+    "first_name": "Peyton",
+    "last_name": "Taylor",
+    "email": "peyton.taylor22@acmedigital.com",
+    "department": "Marketing",
+    "role": "Marketing Manager",
+    "salary": 154166,
+    "hire_date": "2022-06-08"
+  },
+  {
+    "employee_id": "EMP-1023",
+    "first_name": "Morgan",
+    "last_name": "Moore",
+    "email": "morgan.moore23@acmedigital.com",
+    "department": "Marketing",
+    "role": "SEO Lead",
+    "salary": 79621,
+    "hire_date": "2024-10-30"
+  },
+  {
+    "employee_id": "EMP-1024",
+    "first_name": "Avery",
+    "last_name": "Garcia",
+    "email": "avery.garcia24@acmedigital.com",
+    "department": "Product",
+    "role": "Product Manager",
+    "salary": 190018,
+    "hire_date": "2022-06-06"
+  },
+  {
+    "employee_id": "EMP-1025",
+    "first_name": "Casey",
+    "last_name": "Taylor",
+    "email": "casey.taylor25@acmedigital.com",
+    "department": "Finance",
+    "role": "Financial Analyst",
+    "salary": 179100,
+    "hire_date": "2022-12-21"
+  },
+  {
+    "employee_id": "EMP-1026",
+    "first_name": "Jamie",
+    "last_name": "Taylor",
+    "email": "jamie.taylor26@acmedigital.com",
+    "department": "Sales",
+    "role": "Sales Manager",
+    "salary": 114009,
+    "hire_date": "2022-03-15"
+  },
+  {
+    "employee_id": "EMP-1027",
+    "first_name": "Chris",
+    "last_name": "Moore",
+    "email": "chris.moore27@acmedigital.com",
+    "department": "Engineering",
+    "role": "QA Specialist",
+    "salary": 107487,
+    "hire_date": "2023-09-27"
+  },
+  {
+    "employee_id": "EMP-1028",
+    "first_name": "Alex",
+    "last_name": "Brown",
+    "email": "alex.brown28@acmedigital.com",
+    "department": "IT Support",
+    "role": "Systems Administrator",
+    "salary": 96385,
+    "hire_date": "2026-02-25"
+  },
+  {
+    "employee_id": "EMP-1029",
+    "first_name": "Riley",
+    "last_name": "Jackson",
+    "email": "riley.jackson29@acmedigital.com",
+    "department": "HR",
+    "role": "HR Manager",
+    "salary": 160932,
+    "hire_date": "2023-10-02"
+  },
+  {
+    "employee_id": "EMP-1030",
+    "first_name": "Taylor",
+    "last_name": "Moore",
+    "email": "taylor.moore30@acmedigital.com",
+    "department": "Finance",
+    "role": "Controller",
+    "salary": 151474,
+    "hire_date": "2023-10-24"
+  },
+  {
+    "employee_id": "EMP-1031",
+    "first_name": "Rowan",
+    "last_name": "Garcia",
+    "email": "rowan.garcia31@acmedigital.com",
+    "department": "Marketing",
+    "role": "CMO",
+    "salary": 191400,
+    "hire_date": "2025-04-16"
+  },
+  {
+    "employee_id": "EMP-1032",
+    "first_name": "Rowan",
+    "last_name": "Miller",
+    "email": "rowan.miller32@acmedigital.com",
+    "department": "Marketing",
+    "role": "CMO",
+    "salary": 153039,
+    "hire_date": "2022-11-01"
+  },
+  {
+    "employee_id": "EMP-1033",
+    "first_name": "Reese",
+    "last_name": "Anderson",
+    "email": "reese.anderson33@acmedigital.com",
+    "department": "Product",
+    "role": "Product Manager",
+    "salary": 97493,
+    "hire_date": "2025-03-20"
+  },
+  {
+    "employee_id": "EMP-1034",
+    "first_name": "Taylor",
+    "last_name": "Hernandez",
+    "email": "taylor.hernandez34@acmedigital.com",
+    "department": "Engineering",
+    "role": "QA Specialist",
+    "salary": 137603,
+    "hire_date": "2025-03-09"
+  },
+  {
+    "employee_id": "EMP-1035",
+    "first_name": "Hayden",
+    "last_name": "Davis",
+    "email": "hayden.davis35@acmedigital.com",
+    "department": "Engineering",
+    "role": "Senior Software Engineer",
+    "salary": 157778,
+    "hire_date": "2022-12-09"
+  },
+  {
+    "employee_id": "EMP-1036",
+    "first_name": "Jordan",
+    "last_name": "Davis",
+    "email": "jordan.davis36@acmedigital.com",
+    "department": "HR",
+    "role": "HR Manager",
+    "salary": 177674,
+    "hire_date": "2024-08-16"
+  },
+  {
+    "employee_id": "EMP-1037",
+    "first_name": "Taylor",
+    "last_name": "Taylor",
+    "email": "taylor.taylor37@acmedigital.com",
+    "department": "Sales",
+    "role": "BDR",
+    "salary": 152684,
+    "hire_date": "2023-10-03"
+  },
+  {
+    "employee_id": "EMP-1038",
+    "first_name": "Pat",
+    "last_name": "Moore",
+    "email": "pat.moore38@acmedigital.com",
+    "department": "Finance",
+    "role": "CFO",
+    "salary": 96850,
+    "hire_date": "2022-01-29"
+  },
+  {
+    "employee_id": "EMP-1039",
+    "first_name": "Skyler",
+    "last_name": "Wilson",
+    "email": "skyler.wilson39@acmedigital.com",
+    "department": "Sales",
+    "role": "Account Executive",
+    "salary": 77704,
+    "hire_date": "2022-10-13"
+  },
+  {
+    "employee_id": "EMP-1040",
+    "first_name": "Avery",
+    "last_name": "Lopez",
+    "email": "avery.lopez40@acmedigital.com",
+    "department": "Legal",
+    "role": "Compliance Officer",
+    "salary": 126213,
+    "hire_date": "2021-08-19"
+  },
+  {
+    "employee_id": "EMP-1041",
+    "first_name": "Jordan",
+    "last_name": "Brown",
+    "email": "jordan.brown41@acmedigital.com",
+    "department": "Engineering",
+    "role": "Backend Lead",
+    "salary": 160448,
+    "hire_date": "2024-07-29"
+  },
+  {
+    "employee_id": "EMP-1042",
+    "first_name": "Morgan",
+    "last_name": "Davis",
+    "email": "morgan.davis42@acmedigital.com",
+    "department": "Sales",
+    "role": "Sales Manager",
+    "salary": 135292,
+    "hire_date": "2023-12-18"
+  },
+  {
+    "employee_id": "EMP-1043",
+    "first_name": "Sam",
+    "last_name": "Wilson",
+    "email": "sam.wilson43@acmedigital.com",
+    "department": "Finance",
+    "role": "Payroll Specialist",
+    "salary": 125637,
+    "hire_date": "2025-01-28"
+  },
+  {
+    "employee_id": "EMP-1044",
+    "first_name": "Taylor",
+    "last_name": "Anderson",
+    "email": "taylor.anderson44@acmedigital.com",
+    "department": "HR",
+    "role": "HR Manager",
+    "salary": 150477,
+    "hire_date": "2023-06-12"
+  },
+  {
+    "employee_id": "EMP-1045",
+    "first_name": "Alex",
+    "last_name": "Williams",
+    "email": "alex.williams45@acmedigital.com",
+    "department": "Sales",
+    "role": "Sales Manager",
+    "salary": 118269,
+    "hire_date": "2023-10-03"
+  },
+  {
+    "employee_id": "EMP-1046",
+    "first_name": "Skyler",
+    "last_name": "Miller",
+    "email": "skyler.miller46@acmedigital.com",
+    "department": "Legal",
+    "role": "Corporate Counsel",
+    "salary": 86579,
+    "hire_date": "2024-05-08"
+  },
+  {
+    "employee_id": "EMP-1047",
+    "first_name": "Alex",
+    "last_name": "Gonzalez",
+    "email": "alex.gonzalez47@acmedigital.com",
+    "department": "Marketing",
+    "role": "CMO",
+    "salary": 102388,
+    "hire_date": "2024-02-08"
+  },
+  {
+    "employee_id": "EMP-1048",
+    "first_name": "Rowan",
+    "last_name": "Thomas",
+    "email": "rowan.thomas48@acmedigital.com",
+    "department": "Finance",
+    "role": "Controller",
+    "salary": 103890,
+    "hire_date": "2025-04-04"
+  },
+  {
+    "employee_id": "EMP-1049",
+    "first_name": "Jordan",
+    "last_name": "Jackson",
+    "email": "jordan.jackson49@acmedigital.com",
+    "department": "Engineering",
+    "role": "Frontend Developer",
+    "salary": 72492,
+    "hire_date": "2026-03-13"
+  },
+  {
+    "employee_id": "EMP-1050",
+    "first_name": "Hayden",
+    "last_name": "Thomas",
+    "email": "hayden.thomas50@acmedigital.com",
+    "department": "Finance",
+    "role": "Financial Analyst",
+    "salary": 190931,
+    "hire_date": "2023-08-18"
+  },
+  {
+    "employee_id": "EMP-1051",
+    "first_name": "Taylor",
+    "last_name": "Garcia",
+    "email": "taylor.garcia51@acmedigital.com",
+    "department": "HR",
+    "role": "HR Manager",
+    "salary": 153501,
+    "hire_date": "2021-08-23"
+  },
+  {
+    "employee_id": "EMP-1052",
+    "first_name": "Riley",
+    "last_name": "Gonzalez",
+    "email": "riley.gonzalez52@acmedigital.com",
+    "department": "HR",
+    "role": "Recruiter",
+    "salary": 140880,
+    "hire_date": "2023-02-22"
+  },
+  {
+    "employee_id": "EMP-1053",
+    "first_name": "Jordan",
+    "last_name": "Martin",
+    "email": "jordan.martin53@acmedigital.com",
+    "department": "HR",
+    "role": "HR Coordinator",
+    "salary": 151163,
+    "hire_date": "2023-03-16"
+  },
+  {
+    "employee_id": "EMP-1054",
+    "first_name": "Hayden",
+    "last_name": "Taylor",
+    "email": "hayden.taylor54@acmedigital.com",
+    "department": "IT Support",
+    "role": "Systems Administrator",
+    "salary": 91772,
+    "hire_date": "2022-09-21"
+  },
+  {
+    "employee_id": "EMP-1055",
+    "first_name": "Dakota",
+    "last_name": "Davis",
+    "email": "dakota.davis55@acmedigital.com",
+    "department": "Marketing",
+    "role": "CMO",
+    "salary": 82154,
+    "hire_date": "2022-09-17"
+  },
+  {
+    "employee_id": "EMP-1056",
+    "first_name": "Jamie",
+    "last_name": "Anderson",
+    "email": "jamie.anderson56@acmedigital.com",
+    "department": "IT Support",
+    "role": "IT Helpdesk Specialist",
+    "salary": 66220,
+    "hire_date": "2023-11-28"
+  },
+  {
+    "employee_id": "EMP-1057",
+    "first_name": "Emerson",
+    "last_name": "Jackson",
+    "email": "emerson.jackson57@acmedigital.com",
+    "department": "HR",
+    "role": "HR Manager",
+    "salary": 135468,
+    "hire_date": "2025-04-13"
+  },
+  {
+    "employee_id": "EMP-1058",
+    "first_name": "Cameron",
+    "last_name": "Rodriguez",
+    "email": "cameron.rodriguez58@acmedigital.com",
+    "department": "Finance",
+    "role": "Payroll Specialist",
+    "salary": 180456,
+    "hire_date": "2026-02-03"
+  },
+  {
+    "employee_id": "EMP-1059",
+    "first_name": "Riley",
+    "last_name": "Lopez",
+    "email": "riley.lopez59@acmedigital.com",
+    "department": "Marketing",
+    "role": "Content Specialist",
+    "salary": 122433,
+    "hire_date": "2021-10-20"
+  },
+  {
+    "employee_id": "EMP-1060",
+    "first_name": "Rowan",
+    "last_name": "Martinez",
+    "email": "rowan.martinez60@acmedigital.com",
+    "department": "Engineering",
+    "role": "QA Specialist",
+    "salary": 104240,
+    "hire_date": "2022-10-04"
+  },
+  {
+    "employee_id": "EMP-1061",
+    "first_name": "Morgan",
+    "last_name": "Jones",
+    "email": "morgan.jones61@acmedigital.com",
+    "department": "Marketing",
+    "role": "Marketing Manager",
+    "salary": 181616,
+    "hire_date": "2025-11-16"
+  },
+  {
+    "employee_id": "EMP-1062",
+    "first_name": "Rowan",
+    "last_name": "Jones",
+    "email": "rowan.jones62@acmedigital.com",
+    "department": "Marketing",
+    "role": "SEO Lead",
+    "salary": 144276,
+    "hire_date": "2025-04-18"
+  },
+  {
+    "employee_id": "EMP-1063",
+    "first_name": "Dakota",
+    "last_name": "Miller",
+    "email": "dakota.miller63@acmedigital.com",
+    "department": "Marketing",
+    "role": "CMO",
+    "salary": 97914,
+    "hire_date": "2021-09-25"
+  },
+  {
+    "employee_id": "EMP-1064",
+    "first_name": "Jordan",
+    "last_name": "Williams",
+    "email": "jordan.williams64@acmedigital.com",
+    "department": "Legal",
+    "role": "Compliance Officer",
+    "salary": 70778,
+    "hire_date": "2026-06-16"
+  },
+  {
+    "employee_id": "EMP-1065",
+    "first_name": "Dakota",
+    "last_name": "Jones",
+    "email": "dakota.jones65@acmedigital.com",
+    "department": "Marketing",
+    "role": "Content Specialist",
+    "salary": 162154,
+    "hire_date": "2024-01-01"
+  },
+  {
+    "employee_id": "EMP-1066",
+    "first_name": "Rowan",
+    "last_name": "Wilson",
+    "email": "rowan.wilson66@acmedigital.com",
+    "department": "Engineering",
+    "role": "Senior Software Engineer",
+    "salary": 74862,
+    "hire_date": "2022-08-08"
+  },
+  {
+    "employee_id": "EMP-1067",
+    "first_name": "Sam",
+    "last_name": "Moore",
+    "email": "sam.moore67@acmedigital.com",
+    "department": "Engineering",
+    "role": "Frontend Developer",
+    "salary": 141350,
+    "hire_date": "2023-05-19"
+  },
+  {
+    "employee_id": "EMP-1068",
+    "first_name": "Sam",
+    "last_name": "Wilson",
+    "email": "sam.wilson68@acmedigital.com",
+    "department": "Finance",
+    "role": "Financial Analyst",
+    "salary": 105404,
+    "hire_date": "2024-06-07"
+  },
+  {
+    "employee_id": "EMP-1069",
+    "first_name": "Jordan",
+    "last_name": "Lopez",
+    "email": "jordan.lopez69@acmedigital.com",
+    "department": "Sales",
+    "role": "Sales Manager",
+    "salary": 152416,
+    "hire_date": "2025-11-25"
+  },
+  {
+    "employee_id": "EMP-1070",
+    "first_name": "Reese",
+    "last_name": "Moore",
+    "email": "reese.moore70@acmedigital.com",
+    "department": "Legal",
+    "role": "Corporate Counsel",
+    "salary": 186341,
+    "hire_date": "2025-02-24"
+  },
+  {
+    "employee_id": "EMP-1071",
+    "first_name": "Chris",
+    "last_name": "Garcia",
+    "email": "chris.garcia71@acmedigital.com",
+    "department": "Legal",
+    "role": "Corporate Counsel",
+    "salary": 88509,
+    "hire_date": "2022-05-07"
+  },
+  {
+    "employee_id": "EMP-1072",
+    "first_name": "Dakota",
+    "last_name": "Wilson",
+    "email": "dakota.wilson72@acmedigital.com",
+    "department": "Sales",
+    "role": "BDR",
+    "salary": 85866,
+    "hire_date": "2022-01-23"
+  },
+  {
+    "employee_id": "EMP-1073",
+    "first_name": "Morgan",
+    "last_name": "Gonzalez",
+    "email": "morgan.gonzalez73@acmedigital.com",
+    "department": "Engineering",
+    "role": "Backend Lead",
+    "salary": 94154,
+    "hire_date": "2025-05-11"
+  },
+  {
+    "employee_id": "EMP-1074",
+    "first_name": "Peyton",
+    "last_name": "Lopez",
+    "email": "peyton.lopez74@acmedigital.com",
+    "department": "Marketing",
+    "role": "Content Specialist",
+    "salary": 94219,
+    "hire_date": "2026-05-06"
+  },
+  {
+    "employee_id": "EMP-1075",
+    "first_name": "Pat",
+    "last_name": "Gonzalez",
+    "email": "pat.gonzalez75@acmedigital.com",
+    "department": "IT Support",
+    "role": "Systems Administrator",
+    "salary": 178292,
+    "hire_date": "2026-02-01"
+  },
+  {
+    "employee_id": "EMP-1076",
+    "first_name": "Casey",
+    "last_name": "Lopez",
+    "email": "casey.lopez76@acmedigital.com",
+    "department": "Legal",
+    "role": "Compliance Officer",
+    "salary": 188107,
+    "hire_date": "2026-04-28"
+  },
+  {
+    "employee_id": "EMP-1077",
+    "first_name": "Morgan",
+    "last_name": "Rodriguez",
+    "email": "morgan.rodriguez77@acmedigital.com",
+    "department": "Finance",
+    "role": "Payroll Specialist",
+    "salary": 70014,
+    "hire_date": "2025-11-13"
+  },
+  {
+    "employee_id": "EMP-1078",
+    "first_name": "Emerson",
+    "last_name": "Wilson",
+    "email": "emerson.wilson78@acmedigital.com",
+    "department": "IT Support",
+    "role": "Network Engineer",
+    "salary": 168078,
+    "hire_date": "2024-09-19"
+  },
+  {
+    "employee_id": "EMP-1079",
+    "first_name": "Avery",
+    "last_name": "Martin",
+    "email": "avery.martin79@acmedigital.com",
+    "department": "HR",
+    "role": "HR Coordinator",
+    "salary": 182899,
+    "hire_date": "2023-03-31"
+  },
+  {
+    "employee_id": "EMP-1080",
+    "first_name": "Pat",
+    "last_name": "Rodriguez",
+    "email": "pat.rodriguez80@acmedigital.com",
+    "department": "Engineering",
+    "role": "Backend Lead",
+    "salary": 65221,
+    "hire_date": "2023-07-25"
+  },
+  {
+    "employee_id": "EMP-1081",
+    "first_name": "Rowan",
+    "last_name": "Miller",
+    "email": "rowan.miller81@acmedigital.com",
+    "department": "IT Support",
+    "role": "Systems Administrator",
+    "salary": 74171,
+    "hire_date": "2022-10-02"
+  },
+  {
+    "employee_id": "EMP-1082",
+    "first_name": "Dakota",
+    "last_name": "Martin",
+    "email": "dakota.martin82@acmedigital.com",
+    "department": "IT Support",
+    "role": "Network Engineer",
+    "salary": 176151,
+    "hire_date": "2025-10-11"
+  },
+  {
+    "employee_id": "EMP-1083",
+    "first_name": "Jamie",
+    "last_name": "Taylor",
+    "email": "jamie.taylor83@acmedigital.com",
+    "department": "Marketing",
+    "role": "CMO",
+    "salary": 107753,
+    "hire_date": "2024-03-21"
+  },
+  {
+    "employee_id": "EMP-1084",
+    "first_name": "Jamie",
+    "last_name": "Moore",
+    "email": "jamie.moore84@acmedigital.com",
+    "department": "Finance",
+    "role": "Controller",
+    "salary": 120108,
+    "hire_date": "2022-10-01"
+  },
+  {
+    "employee_id": "EMP-1085",
+    "first_name": "Quinn",
+    "last_name": "Garcia",
+    "email": "quinn.garcia85@acmedigital.com",
+    "department": "Marketing",
+    "role": "CMO",
+    "salary": 136819,
+    "hire_date": "2021-10-20"
+  },
+  {
+    "employee_id": "EMP-1086",
+    "first_name": "Alex",
+    "last_name": "Martinez",
+    "email": "alex.martinez86@acmedigital.com",
+    "department": "Marketing",
+    "role": "Content Specialist",
+    "salary": 121346,
+    "hire_date": "2022-01-26"
+  },
+  {
+    "employee_id": "EMP-1087",
+    "first_name": "Hayden",
+    "last_name": "Martin",
+    "email": "hayden.martin87@acmedigital.com",
+    "department": "IT Support",
+    "role": "Systems Administrator",
+    "salary": 122905,
+    "hire_date": "2023-12-31"
+  },
+  {
+    "employee_id": "EMP-1088",
+    "first_name": "Pat",
+    "last_name": "Taylor",
+    "email": "pat.taylor88@acmedigital.com",
+    "department": "Product",
+    "role": "Scrum Master",
+    "salary": 87241,
+    "hire_date": "2022-10-13"
+  },
+  {
+    "employee_id": "EMP-1089",
+    "first_name": "Taylor",
+    "last_name": "Martinez",
+    "email": "taylor.martinez89@acmedigital.com",
+    "department": "IT Support",
+    "role": "IT Helpdesk Specialist",
+    "salary": 172272,
+    "hire_date": "2022-04-07"
+  },
+  {
+    "employee_id": "EMP-1090",
+    "first_name": "Riley",
+    "last_name": "Martinez",
+    "email": "riley.martinez90@acmedigital.com",
+    "department": "Sales",
+    "role": "Sales Manager",
+    "salary": 84313,
+    "hire_date": "2026-05-04"
+  },
+  {
+    "employee_id": "EMP-1091",
+    "first_name": "Jordan",
+    "last_name": "Davis",
+    "email": "jordan.davis91@acmedigital.com",
+    "department": "Product",
+    "role": "Scrum Master",
+    "salary": 176376,
+    "hire_date": "2022-03-03"
+  },
+  {
+    "employee_id": "EMP-1092",
+    "first_name": "Taylor",
+    "last_name": "Anderson",
+    "email": "taylor.anderson92@acmedigital.com",
+    "department": "Legal",
+    "role": "Corporate Counsel",
+    "salary": 159155,
+    "hire_date": "2022-07-28"
+  },
+  {
+    "employee_id": "EMP-1093",
+    "first_name": "Quinn",
+    "last_name": "Thomas",
+    "email": "quinn.thomas93@acmedigital.com",
+    "department": "Legal",
+    "role": "Corporate Counsel",
+    "salary": 84342,
+    "hire_date": "2022-10-19"
+  },
+  {
+    "employee_id": "EMP-1094",
+    "first_name": "Alex",
+    "last_name": "Brown",
+    "email": "alex.brown94@acmedigital.com",
+    "department": "Legal",
+    "role": "Corporate Counsel",
+    "salary": 88053,
+    "hire_date": "2021-12-20"
+  },
+  {
+    "employee_id": "EMP-1095",
+    "first_name": "Cameron",
+    "last_name": "Anderson",
+    "email": "cameron.anderson95@acmedigital.com",
+    "department": "Engineering",
+    "role": "QA Specialist",
+    "salary": 97662,
+    "hire_date": "2021-09-20"
+  },
+  {
+    "employee_id": "EMP-1096",
+    "first_name": "Morgan",
+    "last_name": "Anderson",
+    "email": "morgan.anderson96@acmedigital.com",
+    "department": "Finance",
+    "role": "CFO",
+    "salary": 152500,
+    "hire_date": "2023-07-02"
+  },
+  {
+    "employee_id": "EMP-1097",
+    "first_name": "Rowan",
+    "last_name": "Martin",
+    "email": "rowan.martin97@acmedigital.com",
+    "department": "IT Support",
+    "role": "Systems Administrator",
+    "salary": 145301,
+    "hire_date": "2021-11-27"
+  },
+  {
+    "employee_id": "EMP-1098",
+    "first_name": "Cameron",
+    "last_name": "Wilson",
+    "email": "cameron.wilson98@acmedigital.com",
+    "department": "Product",
+    "role": "Product Manager",
+    "salary": 162472,
+    "hire_date": "2021-08-24"
+  },
+  {
+    "employee_id": "EMP-1099",
+    "first_name": "Skyler",
+    "last_name": "Anderson",
+    "email": "skyler.anderson99@acmedigital.com",
+    "department": "Marketing",
+    "role": "Content Specialist",
+    "salary": 175082,
+    "hire_date": "2022-11-26"
+  },
+  {
+    "employee_id": "EMP-1100",
+    "first_name": "Casey",
+    "last_name": "Taylor",
+    "email": "casey.taylor100@acmedigital.com",
+    "department": "Product",
+    "role": "Scrum Master",
+    "salary": 96358,
+    "hire_date": "2024-12-08"
+  }
+]

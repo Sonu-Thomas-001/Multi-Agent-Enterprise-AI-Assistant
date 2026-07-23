@@ -1,0 +1,101 @@
+employee_id,first_name,last_name,email,department,role,salary,hire_date
+EMP-1001,Morgan,Smith,morgan.smith1@acmedigital.com,Marketing,Content Specialist,94256,2025-09-11
+EMP-1002,Morgan,Moore,morgan.moore2@acmedigital.com,HR,HR Coordinator,69165,2026-04-23
+EMP-1003,Taylor,Miller,taylor.miller3@acmedigital.com,Sales,Account Executive,138563,2025-05-12
+EMP-1004,Rowan,Wilson,rowan.wilson4@acmedigital.com,Sales,VP Sales,142236,2024-12-01
+EMP-1005,Alex,Garcia,alex.garcia5@acmedigital.com,Legal,Compliance Officer,101421,2025-08-09
+EMP-1006,Pat,Hernandez,pat.hernandez6@acmedigital.com,HR,HR Manager,114797,2025-12-07
+EMP-1007,Reese,Lopez,reese.lopez7@acmedigital.com,Marketing,Marketing Manager,160647,2023-11-26
+EMP-1008,Rowan,Brown,rowan.brown8@acmedigital.com,Legal,Corporate Counsel,137357,2024-10-31
+EMP-1009,Emerson,Lopez,emerson.lopez9@acmedigital.com,Sales,Account Executive,71006,2022-10-08
+EMP-1010,Riley,Martinez,riley.martinez10@acmedigital.com,HR,Recruiter,178571,2025-11-29
+EMP-1011,Quinn,Rodriguez,quinn.rodriguez11@acmedigital.com,Product,Scrum Master,174328,2024-06-06
+EMP-1012,Chris,Lopez,chris.lopez12@acmedigital.com,IT Support,IT Helpdesk Specialist,152841,2024-12-24
+EMP-1013,Taylor,Martin,taylor.martin13@acmedigital.com,Finance,Controller,86417,2023-11-20
+EMP-1014,Quinn,Rodriguez,quinn.rodriguez14@acmedigital.com,Sales,BDR,175474,2022-03-03
+EMP-1015,Jordan,Davis,jordan.davis15@acmedigital.com,Engineering,Frontend Developer,117581,2024-12-22
+EMP-1016,Taylor,Miller,taylor.miller16@acmedigital.com,IT Support,IT Helpdesk Specialist,150909,2023-09-05
+EMP-1017,Quinn,Anderson,quinn.anderson17@acmedigital.com,Finance,Payroll Specialist,83301,2025-02-03
+EMP-1018,Rowan,Moore,rowan.moore18@acmedigital.com,Marketing,CMO,182679,2023-03-16
+EMP-1019,Quinn,Lopez,quinn.lopez19@acmedigital.com,Sales,Sales Manager,131784,2023-09-17
+EMP-1020,Taylor,Johnson,taylor.johnson20@acmedigital.com,HR,Recruiter,147240,2025-07-31
+EMP-1021,Avery,Martin,avery.martin21@acmedigital.com,HR,HR Coordinator,115019,2023-02-19
+EMP-1022,Peyton,Taylor,peyton.taylor22@acmedigital.com,Marketing,Marketing Manager,154166,2022-06-08
+EMP-1023,Morgan,Moore,morgan.moore23@acmedigital.com,Marketing,SEO Lead,79621,2024-10-30
+EMP-1024,Avery,Garcia,avery.garcia24@acmedigital.com,Product,Product Manager,190018,2022-06-06
+EMP-1025,Casey,Taylor,casey.taylor25@acmedigital.com,Finance,Financial Analyst,179100,2022-12-21
+EMP-1026,Jamie,Taylor,jamie.taylor26@acmedigital.com,Sales,Sales Manager,114009,2022-03-15
+EMP-1027,Chris,Moore,chris.moore27@acmedigital.com,Engineering,QA Specialist,107487,2023-09-27
+EMP-1028,Alex,Brown,alex.brown28@acmedigital.com,IT Support,Systems Administrator,96385,2026-02-25
+EMP-1029,Riley,Jackson,riley.jackson29@acmedigital.com,HR,HR Manager,160932,2023-10-02
+EMP-1030,Taylor,Moore,taylor.moore30@acmedigital.com,Finance,Controller,151474,2023-10-24
+EMP-1031,Rowan,Garcia,rowan.garcia31@acmedigital.com,Marketing,CMO,191400,2025-04-16
+EMP-1032,Rowan,Miller,rowan.miller32@acmedigital.com,Marketing,CMO,153039,2022-11-01
+EMP-1033,Reese,Anderson,reese.anderson33@acmedigital.com,Product,Product Manager,97493,2025-03-20
+EMP-1034,Taylor,Hernandez,taylor.hernandez34@acmedigital.com,Engineering,QA Specialist,137603,2025-03-09
+EMP-1035,Hayden,Davis,hayden.davis35@acmedigital.com,Engineering,Senior Software Engineer,157778,2022-12-09
+EMP-1036,Jordan,Davis,jordan.davis36@acmedigital.com,HR,HR Manager,177674,2024-08-16
+EMP-1037,Taylor,Taylor,taylor.taylor37@acmedigital.com,Sales,BDR,152684,2023-10-03
+EMP-1038,Pat,Moore,pat.moore38@acmedigital.com,Finance,CFO,96850,2022-01-29
+EMP-1039,Skyler,Wilson,skyler.wilson39@acmedigital.com,Sales,Account Executive,77704,2022-10-13
+EMP-1040,Avery,Lopez,avery.lopez40@acmedigital.com,Legal,Compliance Officer,126213,2021-08-19
+EMP-1041,Jordan,Brown,jordan.brown41@acmedigital.com,Engineering,Backend Lead,160448,2024-07-29
+EMP-1042,Morgan,Davis,morgan.davis42@acmedigital.com,Sales,Sales Manager,135292,2023-12-18
+EMP-1043,Sam,Wilson,sam.wilson43@acmedigital.com,Finance,Payroll Specialist,125637,2025-01-28
+EMP-1044,Taylor,Anderson,taylor.anderson44@acmedigital.com,HR,HR Manager,150477,2023-06-12
+EMP-1045,Alex,Williams,alex.williams45@acmedigital.com,Sales,Sales Manager,118269,2023-10-03
+EMP-1046,Skyler,Miller,skyler.miller46@acmedigital.com,Legal,Corporate Counsel,86579,2024-05-08
+EMP-1047,Alex,Gonzalez,alex.gonzalez47@acmedigital.com,Marketing,CMO,102388,2024-02-08
+EMP-1048,Rowan,Thomas,rowan.thomas48@acmedigital.com,Finance,Controller,103890,2025-04-04
+EMP-1049,Jordan,Jackson,jordan.jackson49@acmedigital.com,Engineering,Frontend Developer,72492,2026-03-13
+EMP-1050,Hayden,Thomas,hayden.thomas50@acmedigital.com,Finance,Financial Analyst,190931,2023-08-18
+EMP-1051,Taylor,Garcia,taylor.garcia51@acmedigital.com,HR,HR Manager,153501,2021-08-23
+EMP-1052,Riley,Gonzalez,riley.gonzalez52@acmedigital.com,HR,Recruiter,140880,2023-02-22
+EMP-1053,Jordan,Martin,jordan.martin53@acmedigital.com,HR,HR Coordinator,151163,2023-03-16
+EMP-1054,Hayden,Taylor,hayden.taylor54@acmedigital.com,IT Support,Systems Administrator,91772,2022-09-21
+EMP-1055,Dakota,Davis,dakota.davis55@acmedigital.com,Marketing,CMO,82154,2022-09-17
+EMP-1056,Jamie,Anderson,jamie.anderson56@acmedigital.com,IT Support,IT Helpdesk Specialist,66220,2023-11-28
+EMP-1057,Emerson,Jackson,emerson.jackson57@acmedigital.com,HR,HR Manager,135468,2025-04-13
+EMP-1058,Cameron,Rodriguez,cameron.rodriguez58@acmedigital.com,Finance,Payroll Specialist,180456,2026-02-03
+EMP-1059,Riley,Lopez,riley.lopez59@acmedigital.com,Marketing,Content Specialist,122433,2021-10-20
+EMP-1060,Rowan,Martinez,rowan.martinez60@acmedigital.com,Engineering,QA Specialist,104240,2022-10-04
+EMP-1061,Morgan,Jones,morgan.jones61@acmedigital.com,Marketing,Marketing Manager,181616,2025-11-16
+EMP-1062,Rowan,Jones,rowan.jones62@acmedigital.com,Marketing,SEO Lead,144276,2025-04-18
+EMP-1063,Dakota,Miller,dakota.miller63@acmedigital.com,Marketing,CMO,97914,2021-09-25
+EMP-1064,Jordan,Williams,jordan.williams64@acmedigital.com,Legal,Compliance Officer,70778,2026-06-16
+EMP-1065,Dakota,Jones,dakota.jones65@acmedigital.com,Marketing,Content Specialist,162154,2024-01-01
+EMP-1066,Rowan,Wilson,rowan.wilson66@acmedigital.com,Engineering,Senior Software Engineer,74862,2022-08-08
+EMP-1067,Sam,Moore,sam.moore67@acmedigital.com,Engineering,Frontend Developer,141350,2023-05-19
+EMP-1068,Sam,Wilson,sam.wilson68@acmedigital.com,Finance,Financial Analyst,105404,2024-06-07
+EMP-1069,Jordan,Lopez,jordan.lopez69@acmedigital.com,Sales,Sales Manager,152416,2025-11-25
+EMP-1070,Reese,Moore,reese.moore70@acmedigital.com,Legal,Corporate Counsel,186341,2025-02-24
+EMP-1071,Chris,Garcia,chris.garcia71@acmedigital.com,Legal,Corporate Counsel,88509,2022-05-07
+EMP-1072,Dakota,Wilson,dakota.wilson72@acmedigital.com,Sales,BDR,85866,2022-01-23
+EMP-1073,Morgan,Gonzalez,morgan.gonzalez73@acmedigital.com,Engineering,Backend Lead,94154,2025-05-11
+EMP-1074,Peyton,Lopez,peyton.lopez74@acmedigital.com,Marketing,Content Specialist,94219,2026-05-06
+EMP-1075,Pat,Gonzalez,pat.gonzalez75@acmedigital.com,IT Support,Systems Administrator,178292,2026-02-01
+EMP-1076,Casey,Lopez,casey.lopez76@acmedigital.com,Legal,Compliance Officer,188107,2026-04-28
+EMP-1077,Morgan,Rodriguez,morgan.rodriguez77@acmedigital.com,Finance,Payroll Specialist,70014,2025-11-13
+EMP-1078,Emerson,Wilson,emerson.wilson78@acmedigital.com,IT Support,Network Engineer,168078,2024-09-19
+EMP-1079,Avery,Martin,avery.martin79@acmedigital.com,HR,HR Coordinator,182899,2023-03-31
+EMP-1080,Pat,Rodriguez,pat.rodriguez80@acmedigital.com,Engineering,Backend Lead,65221,2023-07-25
+EMP-1081,Rowan,Miller,rowan.miller81@acmedigital.com,IT Support,Systems Administrator,74171,2022-10-02
+EMP-1082,Dakota,Martin,dakota.martin82@acmedigital.com,IT Support,Network Engineer,176151,2025-10-11
+EMP-1083,Jamie,Taylor,jamie.taylor83@acmedigital.com,Marketing,CMO,107753,2024-03-21
+EMP-1084,Jamie,Moore,jamie.moore84@acmedigital.com,Finance,Controller,120108,2022-10-01
+EMP-1085,Quinn,Garcia,quinn.garcia85@acmedigital.com,Marketing,CMO,136819,2021-10-20
+EMP-1086,Alex,Martinez,alex.martinez86@acmedigital.com,Marketing,Content Specialist,121346,2022-01-26
+EMP-1087,Hayden,Martin,hayden.martin87@acmedigital.com,IT Support,Systems Administrator,122905,2023-12-31
+EMP-1088,Pat,Taylor,pat.taylor88@acmedigital.com,Product,Scrum Master,87241,2022-10-13
+EMP-1089,Taylor,Martinez,taylor.martinez89@acmedigital.com,IT Support,IT Helpdesk Specialist,172272,2022-04-07
+EMP-1090,Riley,Martinez,riley.martinez90@acmedigital.com,Sales,Sales Manager,84313,2026-05-04
+EMP-1091,Jordan,Davis,jordan.davis91@acmedigital.com,Product,Scrum Master,176376,2022-03-03
+EMP-1092,Taylor,Anderson,taylor.anderson92@acmedigital.com,Legal,Corporate Counsel,159155,2022-07-28
+EMP-1093,Quinn,Thomas,quinn.thomas93@acmedigital.com,Legal,Corporate Counsel,84342,2022-10-19
+EMP-1094,Alex,Brown,alex.brown94@acmedigital.com,Legal,Corporate Counsel,88053,2021-12-20
+EMP-1095,Cameron,Anderson,cameron.anderson95@acmedigital.com,Engineering,QA Specialist,97662,2021-09-20
+EMP-1096,Morgan,Anderson,morgan.anderson96@acmedigital.com,Finance,CFO,152500,2023-07-02
+EMP-1097,Rowan,Martin,rowan.martin97@acmedigital.com,IT Support,Systems Administrator,145301,2021-11-27
+EMP-1098,Cameron,Wilson,cameron.wilson98@acmedigital.com,Product,Product Manager,162472,2021-08-24
+EMP-1099,Skyler,Anderson,skyler.anderson99@acmedigital.com,Marketing,Content Specialist,175082,2022-11-26
+EMP-1100,Casey,Taylor,casey.taylor100@acmedigital.com,Product,Scrum Master,96358,2024-12-08
