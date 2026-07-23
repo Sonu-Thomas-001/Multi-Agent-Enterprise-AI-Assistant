@@ -1,77 +1,60 @@
-import sys
-import os
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-from a2wsgi import WSGIMiddleware
+from app.core.config import get_settings
+from app.api.v1.router import api_router
+from app.services.db_service import DatabaseService
+from app.services.vector_service import VectorDBService
+from app.utils.logger import logger
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../")))
-from app.agents.graph import graph
-from langchain_core.messages import HumanMessage
+settings = get_settings()
 
-# 1. Initialize Flask App
-flask_app = Flask(__name__)
-# Allow CORS for the frontend on Flask
-CORS(flask_app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
 
-# Flask Route (Synchronous LangGraph processing)
-@flask_app.route("/api/v1/chat/invoke", methods=["POST"])
-def chat_invoke():
-    try:
-        data = request.json
-        if not data or "message" not in data or "session_id" not in data:
-            return jsonify({"error": "Missing message or session_id in request"}), 400
-            
-        session_id = data["session_id"]
-        message = data["message"]
-        
-        inputs = {"messages": [HumanMessage(content=message)]}
-        # Run the graph
-        config = {"configurable": {"thread_id": session_id}}
-        
-        # Invoke LangGraph
-        result = graph.invoke(inputs, config=config)
-        
-        # Get the final message content
-        final_message = result["messages"][-1].content
-        
-        return jsonify({
-            "response": final_message,
-            "agent_used": "LangGraph Supervisor",
-            "sources": []
-        })
-    except Exception as e:
-        return jsonify({
-            "response": f"An error occurred: {str(e)}",
-            "agent_used": "Error",
-            "sources": []
-        })
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """
+    FastAPI Lifespan Context Manager.
+    Initializes relational database schema, synthetic financial data, and vector embeddings on application startup.
+    """
+    logger.info(f"Initializing {settings.PROJECT_NAME} v{settings.VERSION} [{settings.ENVIRONMENT}]")
+    
+    # 1. Initialize SQLite Database & Synthetic Data
+    db_service = DatabaseService(settings=settings)
+    db_service.init_db()
+    
+    # 2. Initialize ChromaDB Vector Store & Synthetic HR/IT Docs
+    vector_service = VectorDBService(settings=settings)
+    vector_service.seed_initial_docs()
 
-# 2. Initialize FastAPI App
+    logger.info("Application startup sequence completed successfully.")
+    yield
+    logger.info("Application shutdown completed.")
+
+
 app = FastAPI(
-    title="Multi-Agent Enterprise AI Assistant",
-    description="Hybrid API using FastAPI and Flask.",
-    version="1.0.0",
+    title=settings.PROJECT_NAME,
+    description="Enterprise Multi-Agent AI Assistant powered by LangGraph, ChromaDB, and SQLite.",
+    version=settings.VERSION,
+    openapi_url=f"{settings.API_V1_STR}/openapi.json",
+    docs_url=f"{settings.API_V1_STR}/docs",
+    redoc_url=f"{settings.API_V1_STR}/redoc",
+    lifespan=lifespan
 )
 
-# Allow CORS for the frontend on FastAPI
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# Configure CORS Middleware
+if settings.CORS_ORIGINS:
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=settings.CORS_ORIGINS,
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
 
-# FastAPI Route (Async health check)
-@app.get("/api/v1/system/status")
-async def get_status():
-    return {"status": "ok", "message": "System is operational (FastAPI)"}
+# Include API v1 Router
+app.include_router(api_router, prefix=settings.API_V1_STR)
 
-# 3. Mount Flask inside FastAPI
-# We mount the flask_app as a WSGI middleware.
-# Because the frontend makes requests to /api/v1/chat/invoke, we will mount it at the root 
-# so the Flask routes match exactly, or handle it as a fallback.
-app.mount("/", WSGIMiddleware(flask_app))
 
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)

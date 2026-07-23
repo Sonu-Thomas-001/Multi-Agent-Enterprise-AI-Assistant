@@ -1,76 +1,73 @@
-import operator
-from typing import Annotated, Sequence, TypedDict
-from langchain_core.messages import BaseMessage, HumanMessage
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langgraph.graph import StateGraph, END
-import json
-import sys
-import os
+from app.agents.state import AgentState
+from app.agents.supervisor import make_supervisor_node
+from app.agents.worker_agents import create_worker_agents
+from langchain_core.messages import HumanMessage
+from app.utils.logger import logger
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
-from app.agents.worker_agents import llm, hr_agent, finance_agent, it_agent
+def build_agent_graph():
+    supervisor_node = make_supervisor_node()
+    hr_agent, finance_agent, it_agent = create_worker_agents()
 
-class AgentState(TypedDict):
-    messages: Annotated[Sequence[BaseMessage], operator.add]
-    next: str
+    def hr_node(state: AgentState) -> dict:
+        res = hr_agent.invoke({"messages": state["messages"]})
+        return {"messages": [res["messages"][-1]]}
 
-# Supervisor node to route requests
-def supervisor_node(state: AgentState):
-    system_prompt = (
-        "You are a supervisor managing the following worker agents: HR, Finance, IT. "
-        "Given the user's request, decide which agent should act next. "
-        "If the user is asking about HR (policies, benefits, remote work), route to 'HR'. "
-        "If the user is asking about Finance (budgets, expenses), route to 'Finance'. "
-        "If the user is asking about IT (troubleshooting, VPN, passwords), route to 'IT'. "
-        "If the request has been fully answered, or if it doesn't fit any category, output 'FINISH'. "
-        "Your response MUST be valid JSON with a single key 'next' and the value being one of: 'HR', 'Finance', 'IT', 'FINISH'."
+    def finance_node(state: AgentState) -> dict:
+        res = finance_agent.invoke({"messages": state["messages"]})
+        return {"messages": [res["messages"][-1]]}
+
+    def it_node(state: AgentState) -> dict:
+        res = it_agent.invoke({"messages": state["messages"]})
+        return {"messages": [res["messages"][-1]]}
+
+    workflow = StateGraph(AgentState)
+
+    workflow.add_node("Supervisor", supervisor_node)
+    workflow.add_node("HR", hr_node)
+    workflow.add_node("Finance", finance_node)
+    workflow.add_node("IT", it_node)
+
+    workflow.add_edge("HR", "Supervisor")
+    workflow.add_edge("Finance", "Supervisor")
+    workflow.add_edge("IT", "Supervisor")
+
+    workflow.add_conditional_edges(
+        "Supervisor",
+        lambda x: x["next"],
+        {
+            "HR": "HR",
+            "Finance": "Finance",
+            "IT": "IT",
+            "FINISH": END
+        }
     )
+
+    workflow.set_entry_point("Supervisor")
+    return workflow.compile()
+
+
+# Global graph instance
+_compiled_graph = None
+
+def get_graph():
+    global _compiled_graph
+    if _compiled_graph is None:
+        _compiled_graph = build_agent_graph()
+    return _compiled_graph
+
+
+def run_agent_workflow(message: str, session_id: str) -> dict:
+    """
+    Executes the multi-agent graph with user prompt and session context.
+    """
+    graph = get_graph()
+    inputs = {"messages": [HumanMessage(content=message)]}
+    config = {"configurable": {"thread_id": session_id}}
     
-    prompt = ChatPromptTemplate.from_messages([
-        ("system", system_prompt),
-        MessagesPlaceholder(variable_name="messages"),
-    ])
-    
-    # Force JSON output for the routing decision
-    chain = prompt | llm.with_structured_output({"type": "object", "properties": {"next": {"type": "string", "enum": ["HR", "Finance", "IT", "FINISH"]}}})
-    result = chain.invoke({"messages": state["messages"]})
-    return {"next": result.get("next", "FINISH")}
-
-def hr_node(state: AgentState):
-    result = hr_agent.invoke({"messages": state["messages"]})
-    return {"messages": result["messages"][-1]}
-
-def finance_node(state: AgentState):
-    result = finance_agent.invoke({"messages": state["messages"]})
-    return {"messages": result["messages"][-1]}
-
-def it_node(state: AgentState):
-    result = it_agent.invoke({"messages": state["messages"]})
-    return {"messages": result["messages"][-1]}
-
-# Build the Graph
-workflow = StateGraph(AgentState)
-
-workflow.add_node("Supervisor", supervisor_node)
-workflow.add_node("HR", hr_node)
-workflow.add_node("Finance", finance_node)
-workflow.add_node("IT", it_node)
-
-workflow.add_edge("HR", "Supervisor")
-workflow.add_edge("Finance", "Supervisor")
-workflow.add_edge("IT", "Supervisor")
-
-# The supervisor decides who goes next
-workflow.add_conditional_edges(
-    "Supervisor",
-    lambda x: x["next"],
-    {
-        "HR": "HR",
-        "Finance": "Finance",
-        "IT": "IT",
-        "FINISH": END
+    result = graph.invoke(inputs, config=config)
+    last_msg = result["messages"][-1].content
+    return {
+        "response": last_msg,
+        "agent_used": "Supervisor Routing"
     }
-)
-
-workflow.set_entry_point("Supervisor")
-graph = workflow.compile()
