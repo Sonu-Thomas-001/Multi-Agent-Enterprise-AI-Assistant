@@ -1,0 +1,15 @@
+flask
+flask-cors
+fastapi
+uvicorn[standard]
+a2wsgi
+langgraph
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-google-genai
+pydantic
+sqlalchemy
+chromadb
+python-dotenv
